@@ -5,3 +5,19 @@ html {
   *, *:before, *:after {
     box-sizing: inherit;
 }
+
+.flex {
+    display: flex;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.col {
+    flex-direction: column;
+}
+
+#brand-logo {
+    display: none;
+}
