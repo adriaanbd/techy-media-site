@@ -246,6 +246,14 @@ footer {
         display: flex;
     }
     /* End Funding Section */
+
+    .topics {
+        display: flex;
+    }
+
+    .topic-card {
+        width: 50%;
+    }
 }
 
 
