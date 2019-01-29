@@ -1,15 +1,23 @@
+
 html {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
+
 
   *, *:before, *:after {
     box-sizing: inherit;
+    margin: 0;
+    padding: 0;
 }
 
 ul {
     list-style-type: none;
 }
-
+main {
+    margin: 0.1em 0.5em;
+}
 .flex {
     display: flex;
 }
@@ -21,7 +29,141 @@ ul {
 .col {
     flex-direction: column;
 }
+.jc-sb {
+    justify-content: space-between;
+}
+
+/**** START Navigation ****/
+
+#top-nav {
+    height: 4.875rem; /* 78px /16px */
+}
 
 #brand-logo {
     display: none;
 }
+
+#first {
+    display: none;
+}
+
+#second {
+    height: 61.53846%; /* 78px/48px */
+    background-color: #fefefe;
+    color: #555;
+    justify-content: space-between;
+}
+
+#right {
+    align-items: center;
+}
+
+#third {
+    height: 37.5%;
+    width: 100%;
+    background-color: #ffdd33;
+}
+
+#brand-logo-sticky, #brand-logo {
+    width: 6.6875rem; /*107px/16px */
+    background-color: pink;
+}
+
+/**** Cover Article SEction ****/
+
+#cover {
+    height: 100vh;
+    width: 100%;
+    background-color: teal;
+}
+
+.cover-article {
+    border: 1px solid black;
+    height: 33.33%;
+    min-height: 110px; 
+}
+
+/**** Latest News ****/
+.news-article {
+    height: 4.6875rem; /*75/16*/
+    background-color: gold;
+    width: 100%;
+    border: 1px solid black;
+}
+/*** Funding Section ***/
+.funding-card {
+    height: 14.375rem;
+    background-color: green;
+    border: 1px solid black;
+}
+
+/*** topic Section ***/
+
+.topic-card {
+    min-height: 41.25rem; /* 660px / 16 px */
+    max-height: 52.5rem; /* 840px / 16px */
+    background-color: red;
+    width: 100%;
+    border: 1px solid black;
+}
+
+/**** DEALS Section ****/
+
+.deal {
+    height: 5rem;
+    width: 100%;
+    background-color: lightblue;
+    border: 1px solid black;
+}
+
+/**** FOOTER Section ****/
+footer {
+    height: 17.5rem; /*280px / 16px*/
+}
+
+.footer-row {
+    min-width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.top {
+    background-color: grey;
+    min-height: 60%; /* 60% of of 280px */
+    min-width: 100%;
+}
+
+.bottom {
+    background-color: black;
+    min-height: 40%; /* */
+    min-width:100%;
+}
+
+.footer-wrapper {
+    background-color: pink;
+    min-height:80px; /* 50% of top footer row - must edit this */
+    min-width: 100%;
+    border: 1px solid black;
+    
+}
+
+
+@media only screen and (min-width: 768px) {
+    #first {
+        display: flex;
+    }
+    
+    #second #left .nav-item {
+        display: flex;
+        width: 80px;
+        height: 100%;
+        border: 1px dashed red;
+    }
+}
+
+
+
+
+
+/**** END Navigation ****/
+
