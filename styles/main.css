@@ -235,6 +235,15 @@ footer {
     }
     .funding-card {
         width: 33.33%;
+        height: 15.625rem; /* 250px / 16*/ 
+    }
+
+    .funding-card:nth-last-child(1) {
+        display: none;
+    }
+
+    #funding-nav {
+        display: flex;
     }
     /* End Funding Section */
 }
