@@ -29,7 +29,7 @@
                     <li class="nav-item"></li>
                     <li class="nav-item"></li>
                 </ul>
-                <div class="nav-col" id="right">
+                <div class="nav-col flex" id="right">
                     <div class="nav-item" id="search"><i class="fas fa-search"></i></div>
                     <div class="nav-item" id="burger-menu"><i class="fas fa-bars"></i></div>
                 </div>
@@ -45,9 +45,9 @@
                 <article class="cover-article" id="cover-top-right"></article>
                 <article class="cover-article" id="cover-bot-right"></article>
             </section>
-            <section id="latest-news">
+            <section id="latest-news" class="flex col">
                 <h2 class="section-title">Latest News</h2>
-                <div class="flex wrap">
+                <div class="flex wrap" id="news-articles">
                     <article class="news-article"></article>
                     <article class="news-article"></article>
                     <article class="news-article"></article>
@@ -61,9 +61,9 @@
             <section id="latest-funding">
                 <h2 class="section-title">Latest funding round on Index.co</h2>
                 <ul id="funding-nav">
-                    <li class="funding-nav-items"></li>
-                    <li class="funding-nav-items"></li>
-                    <li class="funding-nav-items"></li>
+                    <li class="funding-nav-items">link</li>
+                    <li class="funding-nav-items">link</li>
+                    <li class="funding-nav-items">link</li>
                 </ul>
                 <div id="funding-wrapper">
                     <article class="funding-card"></article>
@@ -84,8 +84,12 @@
                 <article class="topic-card"></article>
                 <article class="topic-card"></article>
             </section>
-            <section id="deals">
-                <h2 class="section-title">Latest deals</h2>
+            <section id="deals" class="flex col">
+                <div id="deals-header" class="flex jc-sb">
+                    <h2 class="section-title">Latest deals</h2>
+                    <a href="#" class="section-link">see all</a>
+                </div>
+                
                 <article class="deal"></article>
                 <article class="deal"></article>
                 <article class="deal"></article>
@@ -96,15 +100,17 @@
                 <article class="deal"></article>
             </section>
             <footer class="flex col">
-                <div class="footer-row">
-                    <div class="footer-wrapper">
-                        <div class="footer-item" id="footer-social"></div>
+                <div class="footer-row flex col top">
+                    <div class="footer-wrapper flex col">
+                        <div class="footer-item" id="footer-social">
+
+                        </div>
                         <div class="footer-item" id="footer-nav"></div>
                     </div>
                 </div>
-                <div class="footer-row">
+                <div class="footer-row flex col bottom">
                     <div class="footer-wrapper">
-                        <div class="footer-item">Copyright</div>
+
                     </div>
                 </div>
             </footer>
