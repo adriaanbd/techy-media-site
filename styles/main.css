@@ -59,10 +59,25 @@ ul {
     background-color: pink;
 }
 
+#cover {
+    height: 100vh;
+    width: 100%;
+    background-color: teal;
+}
+
+main {
+    margin: 0.1em 0.5em;
+}
+
+.cover-article {
+    border: 1px solid black;
+    height: 33.33%;
+    min-height: 110px; 
+}
+
 @media only screen and (min-width: 768px) {
     #first {
         display: flex;
-        height: 
     }
     
     #second #left .nav-item {
