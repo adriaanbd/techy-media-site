@@ -6,6 +6,10 @@ html {
     box-sizing: inherit;
 }
 
+ul {
+    list-style-type: none;
+}
+
 .flex {
     display: flex;
 }
