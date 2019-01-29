@@ -45,12 +45,37 @@ ul {
     height: 61.53846%; /* 78px/48px */
     background-color: #fefefe;
     color: #555;
+    justify-content: space-between;
+}
+
+#third {
+    height: 37.5%;
+    width: 100%;
+    background-color: #ffdd33;
 }
 
 #brand-logo-sticky, #brand-logo {
     width: 6.6875rem; /*107px/16px */
     background-color: pink;
 }
+
+@media only screen and (min-width: 768px) {
+    #first {
+        display: flex;
+        height: 
+    }
+    
+    #second #left .nav-item {
+        display: flex;
+        width: 80px;
+        height: 100%;
+        border: 1px dashed red;
+    }
+}
+
+
+
+
 
 /**** END Navigation ****/
 
