@@ -164,6 +164,8 @@ footer {
 }
 
 
+/******  Width >= 786px < ******/
+
 @media only screen and (min-width: 768px) {
     /* Navigation */
     #top-nav {
@@ -258,12 +260,27 @@ footer {
     }
     /* End Funding Section */
 
-    .topics {
+    #topics {
         display: flex;
+        flex-wrap: wrap;
     }
 
     .topic-card {
         width: 50%;
+        min-height: 43.375rem;
+        max-height: 45.31rem;
+    }
+
+    #deal-wrapper {
+        display: flex;
+        flex-direction: row;
+        flex-wrap:wrap;
+    }
+
+    .deal {
+        width: 33.33%;
+        min-height: 16.25rem;
+        max-height: 20rem;
     }
 }
 
