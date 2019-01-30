@@ -68,9 +68,11 @@ main {
     background-color: #ffdd33;
 }
 
+
 .nav-wrapper {
     height: 62.5%;
 }
+
 
 #brand-logo {
     display: none;
@@ -78,15 +80,17 @@ main {
     background-color: lightblue;
 }
 
-#brand-logo-sticky, #brand-logo {
+.brand-logo-sticky, #brand-logo {
     width: 6.6875rem; /*107px/16px */
     background-color: pink;
     height: 100%;
 }
 
-#brand-logo-sticky {
+.brand-logo-sticky {
     height: 50px;
 }
+
+
 /**** END Navigation ****/
 
 /**** Cover Article SEction ****/
@@ -167,7 +171,37 @@ footer {
 
 }
 
+/*** Sticky nav experiment ***/
 
+#sticky-nav {
+    width:100%;
+    position: sticky;
+    top:0px;
+}
+
+.sticky-nav-wrapper {
+    height: 5rem;
+    width: 100%;
+}
+#second-sticky {
+    /* height: 3.125rem;  50px; */
+    /* height: 100%; */
+    background-color: #fefefe;
+    color: #555;
+    justify-content: space-between;
+    border: 1px solid black;
+    width: 100%;
+}
+#right-sticky {
+    padding-left: 80%;
+}
+
+#third-sticky {
+    height: 37.5%;
+    width: 100%;
+    background-color: #ffdd33;
+}
+ /** end sticky nav experiment **/
 
 /******  Width >= 786px < 1024 ******/
 
@@ -199,7 +233,7 @@ footer {
 
     #second {
         width: 100%;
-        height: 62.5%
+        height: 62.5%;
     }
 
     #second #left .nav-item {
@@ -209,7 +243,7 @@ footer {
         border: 1px dashed red;
     }
 
-    #burger-menu {
+    #burger-menu, #burger-menu-sticky {
         display: none;
     }
 
@@ -217,6 +251,8 @@ footer {
         /* height: 30px;  27.2727273% */
         height: 27.27%
     }
+
+
     /* End Navigation */
 
     /* cover*/
