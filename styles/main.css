@@ -44,6 +44,10 @@ main {
     display: none;
 }
 
+#first-second-wrapper {
+    width: 100%;
+}
+
 #second {
     /* height: 3.125rem;  50px; */
     /* height: 100%; */
@@ -51,7 +55,7 @@ main {
     color: #555;
     justify-content: space-between;
     border: 1px solid black;
-    width:100vw;
+    width: 100%;
 }
 
 #right {
@@ -96,7 +100,7 @@ main {
 .cover-article {
     border: 1px solid black;
     height: 33.33%;
-    min-height: 110px; 
+    min-height: 110px;
 }
 
 /**** Latest News ****/
@@ -160,11 +164,12 @@ footer {
     min-height:80px; /* 50% of top footer row - must edit this */
     min-width: 100%;
     border: 1px solid black;
-    
+
 }
 
 
-/******  Width >= 786px < ******/
+
+/******  Width >= 786px < 1024 ******/
 
 @media only screen and (min-width: 768px) {
     /* Navigation */
@@ -176,10 +181,6 @@ footer {
         height: 72.73%;
     }
 
-    #first-second-wrapper {
-        width: 100%;
-    }
-    
     #brand-logo {
         display: flex;
     }
@@ -188,7 +189,7 @@ footer {
     #brand-logo-sticky {
         display: none;
     }
-    
+
     #first {
         display: flex;
         /* height: 30px;  27.2727273%; */
@@ -200,12 +201,16 @@ footer {
         width: 100%;
         height: 62.5%
     }
-    
+
     #second #left .nav-item {
         display: flex;
         width: 80px;
         /* height: 100%; */
         border: 1px dashed red;
+    }
+
+    #burger-menu {
+        display: none;
     }
 
     #third {
@@ -248,7 +253,7 @@ footer {
     }
     .funding-card {
         width: 33.33%;
-        height: 15.625rem; /* 250px / 16*/ 
+        height: 15.625rem; /* 250px / 16*/
     }
 
     .funding-card:nth-last-child(1) {
@@ -284,8 +289,32 @@ footer {
     }
 }
 
+/******  Width >= 1024px ******/
 
+@media only screen and (min-width: 1024px) {
+    #brand-logo {
+        display: none;
+    }
 
+    .news-article {
+        width: 25%;
+        height: 16.875rem;
+    }
 
+    .funding-card:nth-last-child(1) {
+        display: block;
+    }
 
+    .topic-card {
+        width: 33.33%;
+        min-height: 42.8125rem; /* 685px */
+        max-height: 43.75rem;
+    }
 
+    .deal {
+        width: 25%;
+        min-height: 18rem; /* 288px */
+        max-height: 18.75rem; /* 300px */
+    }
+
+}
