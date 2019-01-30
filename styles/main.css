@@ -164,7 +164,8 @@ footer {
 }
 
 
-/******  Width >= 786px < ******/
+
+/******  Width >= 786px < 1024 ******/
 
 @media only screen and (min-width: 768px) {
     /* Navigation */
@@ -284,6 +285,13 @@ footer {
     }
 }
 
+
+@media only screen and (min-width: 1024px) {
+    #brand-logo {
+        display: none;
+    }
+    
+}
 
 
 
