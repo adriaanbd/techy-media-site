@@ -175,8 +175,8 @@ footer {
 
 #sticky-nav {
     width:100%;
-    position: sticky;
-    top:0px;
+    /* position: sticky;
+    top:0px; */
 }
 
 .sticky-nav-wrapper {
@@ -193,7 +193,8 @@ footer {
     width: 100%;
 }
 #right-sticky {
-    padding-left: 80%;
+    align-items: center;
+
 }
 
 #third-sticky {
@@ -236,7 +237,7 @@ footer {
         height: 62.5%;
     }
 
-    #second #left .nav-item {
+    #second #left .nav-item, #second-sticky #left-sticky .nav-item {
         display: flex;
         width: 80px;
         /* height: 100%; */
