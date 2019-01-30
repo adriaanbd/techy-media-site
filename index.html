@@ -10,34 +10,38 @@
     </head>
     <body>
         <nav class="flex col" id="top-nav">
-            <div id="brand-logo"></div>
-            <ul class="nav-row flex" id="first">
-                <li class="nav-item"></li>
-                <li class="nav-item"></li>
-                <li class="nav-item"></li>
-                <li class="nav-item"></li>
-                <li class="nav-item"></li>
-            </ul>
-            <div class="nav-row flex" id="second">
-                <div id="brand-logo-sticky"></div>
-                <ul class="nav-col flex" id="left">
-                    <li class="nav-item"></li>
-                    <li class="nav-item"></li>
-                    <li class="nav-item"></li>
-                    <li class="nav-item"></li>
-                    <li class="nav-item"></li>
-                    <li class="nav-item"></li>
-                    <li class="nav-item"></li>
-                </ul>
-                <div class="nav-col flex" id="right">
-                    <div class="nav-item" id="search"><i class="fas fa-search"></i></div>
-                    <div class="nav-item" id="burger-menu"><i class="fas fa-bars"></i></div>
+            <div class="nav-wrapper flex">
+                <div id="brand-logo"></div>
+                <div class="flex col" id="first-second-wrapper">
+                    <ul class="nav-row flex" id="first">
+                        <li class="nav-item"></li>
+                        <li class="nav-item"></li>
+                        <li class="nav-item"></li>
+                        <li class="nav-item"></li>
+                        <li class="nav-item"></li>
+                    </ul>
+                    <div class="nav-row flex" id="second">
+                        <div id="brand-logo-sticky"></div>
+                        <ul class="nav-col flex" id="left">
+                            <li class="nav-item"></li>
+                            <li class="nav-item"></li>
+                            <li class="nav-item"></li>
+                            <li class="nav-item"></li>
+                            <li class="nav-item"></li>
+                            <li class="nav-item"></li>
+                            <li class="nav-item"></li>
+                        </ul>
+                        <div class="nav-col flex" id="right">
+                            <div class="nav-item" id="search"><i class="fas fa-search"></i></div>
+                            <div class="nav-item" id="burger-menu"><i class="fas fa-bars"></i></div>
+                        </div>
+                    </div>
                 </div>
-            </div>
+            </div> <!--END OF NAV WRAPPER -->
             <div class="nav-row" id="third">
-
+                
             </div>
-        </nav>
+        </nav> <!--END OF NAV -->
         <main>
             <section class="flex col" id="cover">
                 <h1 hidden>Main Cover Articles</h1>
@@ -66,14 +70,14 @@
                     <li class="funding-nav-items">link</li>
                 </ul>
                 <div id="funding-wrapper">
-                    <article class="funding-card"></article>
-                    <article class="funding-card"></article>
-                    <article class="funding-card"></article>
-                    <article class="funding-card"></article>
+                    <article class="funding-card">1</article>
+                    <article class="funding-card">2</article>
+                    <article class="funding-card">3</article>
+                    <article class="funding-card">4</article>
                 </div>
             </section>
             <section id="topics">
-                <h2 hideen>Topic Cards</h2>
+                <h2 hidden>Topic Cards</h2>
                 <article class="topic-card"></article>
                 <article class="topic-card"></article>
                 <article class="topic-card"></article>
@@ -89,15 +93,17 @@
                     <h2 class="section-title">Latest deals</h2>
                     <a href="#" class="section-link">see all</a>
                 </div>
+                <div id="deal-wrapper">
+                    <article class="deal"></article>
+                    <article class="deal"></article>
+                    <article class="deal"></article>
+                    <article class="deal"></article>
+                    <article class="deal"></article>
+                    <article class="deal"></article>
+                    <article class="deal"></article>
+                    <article class="deal"></article>
+                </div>
                 
-                <article class="deal"></article>
-                <article class="deal"></article>
-                <article class="deal"></article>
-                <article class="deal"></article>
-                <article class="deal"></article>
-                <article class="deal"></article>
-                <article class="deal"></article>
-                <article class="deal"></article>
             </section>
             <footer class="flex col">
                 <div class="footer-row flex col top">
