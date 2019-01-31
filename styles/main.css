@@ -101,6 +101,18 @@ main {
     background-color: teal;
 }
 
+#main-cover-article {
+    background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/01/nembear-796x448.jpg");
+    background-size: 100vw;
+}
+
+.cover-article-overlay {
+    background-image: linear-gradient(#000000, #000000);
+    background-size: 100vw;
+    height: 100%;
+    opacity: 0.6;
+}
+
 .cover-article {
     border: 1px solid black;
     height: 33.33%;
