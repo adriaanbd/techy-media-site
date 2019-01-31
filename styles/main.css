@@ -102,7 +102,7 @@ main {
 }
 #main-cover-article {
     background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/01/nembear-796x448.jpg");
-    background-size: 100vw;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
 }
 
@@ -111,13 +111,29 @@ main {
     height: 33.33%;
     min-height: 110px;
     cursor: pointer;
+    align-items: flex-end;
 }
 
 .cover-article-details {
-    color: white;
     background-color:rgba(0, 0, 0, 0.5);
     background-size: 100% 100%;
     height: 100%;
+    color: white;
+    padding-left: 0.8em;
+    padding-bottom: 0.8em;
+    justify-content: flex-end;
+}
+
+.cover-article h2 {
+    font-size: 1.25rem; /* 20 / 16 */
+}
+
+.cover-article h3 {
+    font-size: 0.875rem; /* 14 / 16 */
+}
+
+.cover-byline {
+    font-size: 0.75rem; /* 12 / 16 */
 }
 
 
