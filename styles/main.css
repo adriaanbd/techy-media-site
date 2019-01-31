@@ -115,7 +115,6 @@ main {
     background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/01/Cambridge-Audio-Yoyo-L-4-of-4-796x417.jpg");
 }
 
-
 .cover-article {
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -155,6 +154,7 @@ main {
     font-weight: 300;
     color: hsla(0, 0%, 100%, .6);
     line-height: 1rem;
+    border: 1px dashed blue; /* BORDER */
 }
 
 .cover-byline span {
@@ -176,10 +176,75 @@ main {
 /**** Latest News ****/
 .news-article {
     height: 4.6875rem; /*75/16*/
-    background-color: gold;
     width: 100%;
     border: 1px solid black;
+    padding: 0.3em;
 }
+
+.story-image {
+    background-size: 100% 100%;
+    width: 6.25rem;
+    height: 100%;
+}
+
+#one {
+    background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/01/4022759577_ce2520d658_o-Cropped-513x270.jpg");
+}
+
+#two {
+    background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/01/Opening-Ceremoni_25-May-2018_19107-1-516x270.jpg");
+}
+
+#three {
+    background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/01/4022759577_ce2520d658_o-Cropped-513x270.jpg");
+}
+
+#four {
+    background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/01/cookieminer-unit-42-cryptocurrency-blockchain-koto-coin-bitcoin-palo-alto-networks-malware-macos-mac-480x270.jpg");
+}
+
+#five {
+    background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/01/fu7xCLS-540x270.jpg");
+}
+
+#six {
+    background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/01/card-credit-card-mastercard-210742-516x270.jpg");
+}
+
+#seven {
+    background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/01/card-credit-card-mastercard-210742-516x270.jpg");
+}
+
+#eight {
+    background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/01/Untitled-design-17-516x270.png");
+}
+
+#nine {
+    background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/01/screenwise-516x270.png");
+}
+
+.story-description {
+    padding-left: 0.5em;
+    border: 1px dashed red; /* BORDER */
+}
+
+.story-description h4 a {
+    color: #000;
+}
+
+.story-description h4 {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.story-byline * {
+    font-size: 12px;
+    line-height: 18px;
+    padding-top: 0.08em; /* 2 / 16 */
+    font-weight: 300;
+    color: #aaa;
+}
+
 /*** Funding Section ***/
 .funding-card {
     height: 14.375rem;
