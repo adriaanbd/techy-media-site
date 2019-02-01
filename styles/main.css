@@ -189,6 +189,8 @@ main {
 
 .section-title {
     margin: 1rem 0.3rem;
+    font-size: 28px;
+    font-weight: 800;
 }
 
 .section-title a {
@@ -267,6 +269,26 @@ main {
     background-color: green;
     border: 1px solid black;
 }
+
+#funding-nav {
+    padding: 0.3em;
+    font-size: 14px;
+
+}
+
+.funding-nav-items {
+    padding: 0.6em 0;
+}
+
+.funding-nav-items a {
+    color: var(--orange);
+}
+
+.funding-nav-items a:hover {
+    color: #000;
+}
+
+
 
 /*** topic Section ***/
 
