@@ -296,7 +296,7 @@ main {
     width: 3.675rem;
     height: 3.675rem;
     position: absolute;
-    background-color: red;
+    background-color: black;
     top: calc(41.75% - 1.8375rem);
     margin-left: calc( 2.6875rem - 1.8375rem);
 }
@@ -304,11 +304,35 @@ main {
 .funding-company {
     height: 41.75%; /* 2.6875rem ~ 43px */
     background-color: var(--orange);
+    color: #fff;
+    padding-left: calc(3.675rem + 1.7rem); /*width of image + margin-left of image * 2*/
+    justify-content: center;
 }
+
+.funding-company h4 {
+    font-weight: 400;
+    font-size: 1.15rem;
+}
+
+
 
 .funding-amt {
     height: 58.25%; /* 60px ~ 3.75rem*/
     background-color: rgba(255, 68, 34, 0.25);
+    padding-left: calc(3.675rem + 1.7rem); /*width of image + margin-left of image * 2*/
+    justify-content: center;
+    font-size: 1.15rem;
+
+}
+.funding-amt > div h5 {
+    font-weight: 800;
+    font-size: 1em;
+}
+
+.funding-amt p {
+    color: #555;
+    font-size: 0.6em;
+    font-weight: 300;
 }
 /*** topic Section ***/
 
