@@ -264,10 +264,13 @@ main {
 /*** Funding Section ***/
 .funding-card {
     height: 14.375rem;
-
     border: 1px solid black;
+    padding: 0.3em;
 }
 
+.funding-card:nth-last-child(1) {
+    display: none;
+}
 
 #funding-nav {
     padding: 0.3em;
@@ -287,8 +290,38 @@ main {
     color: #000;
 }
 
+.funding-details {
+    height: 55.217391304%;
+    font-size: 0.9em;
+    color: #555;
+    background-color: #FFFAF8;
+}
+
+.funding-details a {
+    color: #555;
+}
+
+.funding-details i {
+    color: #000;
+}
+
+.funding-details .news-wrapper {
+    border-top:  1px solid #FFCDC2;
+    height: 35%;
+    align-items: center;
+    font-size: 0.85em;
+}
+
+.funding-details .news-wrapper a {
+    margin-left: calc( 2.6875rem - 1.8375rem);
+}
+
+.funding-details .news-wrapper span {
+    color: #aaa;
+}
+
 .funding-card-header {
-    height: 6.4375rem;
+    height: 44.782608696%; /* 6.4375rem; /* 103px */
     position: relative;
 }
 
@@ -333,6 +366,21 @@ main {
     color: #555;
     font-size: 0.6em;
     font-weight: 300;
+}
+
+.tags-wrapper {
+    justify-content: center;
+    height: 65%;
+    margin-left: calc( 2.6875rem - 1.8375rem);
+    
+}
+
+.tags {
+    justify-items: center;
+}
+
+.tags span {
+    margin-left: 0.3em;
 }
 /*** topic Section ***/
 
