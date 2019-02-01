@@ -253,8 +253,6 @@ main {
     text-decoration: underline;
 }
 
-
-
 .story-byline * {
     font-size: 12px;
     line-height: 18px;
@@ -266,9 +264,10 @@ main {
 /*** Funding Section ***/
 .funding-card {
     height: 14.375rem;
-    background-color: green;
+
     border: 1px solid black;
 }
+
 
 #funding-nav {
     padding: 0.3em;
@@ -288,8 +287,29 @@ main {
     color: #000;
 }
 
+.funding-card-header {
+    height: 6.4375rem;
+    position: relative;
+}
 
+.funding-logo {
+    width: 3.675rem;
+    height: 3.675rem;
+    position: absolute;
+    background-color: red;
+    top: calc(41.75% - 1.8375rem);
+    margin-left: calc( 2.6875rem - 1.8375rem);
+}
 
+.funding-company {
+    height: 41.75%; /* 2.6875rem ~ 43px */
+    background-color: var(--orange);
+}
+
+.funding-amt {
+    height: 58.25%; /* 60px ~ 3.75rem*/
+    background-color: rgba(255, 68, 34, 0.25);
+}
 /*** topic Section ***/
 
 .topic-card {
