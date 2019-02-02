@@ -388,12 +388,19 @@ main {
 }
 /*** topic Section ***/
 
+#topics {
+    margin-top: 2em;
+}
+
 .topic-card {
     min-height: 41.25rem; /* 660px / 16 px */
     max-height: 52.5rem; /* 840px / 16px */
-    background-color: red;
     width: 100%;
-    border: 1px solid black;
+}
+
+#topic-first {
+    /* background-image: url("https://thenextweb.com/hardfork/2019/02/01/bitcoin-cryptocurrency-bear-history/"); */
+    height: 300px;
 }
 
 /**** DEALS Section ****/
