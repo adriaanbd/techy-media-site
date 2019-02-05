@@ -441,11 +441,60 @@ main {
 .topic-latest {
     justify-content: space-between;
     height: 96px;
+    margin-top: 0.1rem;
+}
+
+.latest-copy {
+    background-color: rgba(255,68,34,.06);
+    padding: 0.5rem;
+    color: var(--orange);
+    line-height: 1.4;
+}
+
+.latest-section {
+    font-weight: 400;
+}
+
+.latest-title {
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+.latest-title:hover {
+    text-decoration: underline;
 }
 
 #thumb-first {
     background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/09/bitcoin-cryptocurrency-blockchain-wallet.png");
 }
+
+.topic-news {
+    width: 100%;
+}
+
+.topic-news .article::before {
+    content: "\2022";
+    color: var(--orange);
+    display: inline-block;
+    width: 1rem;
+}
+
+.topic-news .article {
+    font-size: 0.8rem;
+    color: #aaa;
+    font-weight: 400;
+    margin-top: 0.7rem;
+    padding-bottom: 0.7rem;
+    border-bottom: 1px solid #555;
+}
+
+.topic-news .article a {
+    color: #aaa;
+}
+
+.topic-news .article:hover a {
+    color: #555;
+}
+
 
 
 /**** DEALS Section ****/
