@@ -499,11 +499,28 @@ main {
 
 /**** DEALS Section ****/
 
+#deal-wrapper {
+}
+
 .deal {
     height: 5rem;
     width: 100%;
-    background-color: lightblue;
     border: 1px solid black;
+    padding: 0.1rem 0.1rem;
+}
+
+.deal-thumb {
+    background-size: 100% 100%;
+    max-width: 75px;
+}
+
+.price span {
+    text-decoration: line-through;
+}
+
+#thumb-one {
+    background-image: url("https://cdnp3.stackassets.com/d272d065e8025834a90576741d5ba6209466d39c/store/3db6b2710f144d7253142a8d2606cc025c92fa30a511dcf1e2cc2dc53b97/sale_17608_primary_image.jpg");
+    width: 100%;
 }
 
 /**** FOOTER Section ****/
