@@ -147,12 +147,12 @@ main {
     margin-top: 0.2rem;
 }
 
-.cover-article h2 {
+.cover-article-details h2 {
     font-size: 1.25rem; /* 20 / 16 */
     font-weight: 400;
 }
 
-.cover-article h3 {
+.cover-article-details h3 {
     font-size: 0.875rem; /* 14 / 16 */
     font-weight: 300;
 }
@@ -394,14 +394,18 @@ main {
 }
 
 .topic-card {
-    min-height: 41.25rem; /* 660px / 16 px */
     max-height: 52.5rem; /* 840px / 16px */
+    height: 41.25rem; /* 660px / 16 px */
     width: 100%;
+}
+.topic-cover {
+    background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/02/AI-and-blockchain-368x276.jpg");
+    background-size: 100% 100%;
+    height: 50%;
 }
 
 #topic-first {
     /* background-image: url("https://thenextweb.com/hardfork/2019/02/01/bitcoin-cryptocurrency-bear-history/"); */
-    height: 300px;
 }
 
 /**** DEALS Section ****/
