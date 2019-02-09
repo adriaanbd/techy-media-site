@@ -487,7 +487,7 @@ main {
 
 .topic-news .article {
     font-size: 0.8rem;
-    color: #aaa;
+    color: #555;
     font-weight: 400;
     margin-top: 0.7rem;
     padding-bottom: 0.7rem;
@@ -495,11 +495,11 @@ main {
 }
 
 .topic-news .article a {
-    color: #aaa;
+    color: #555;
 }
 
 .topic-news .article:hover a {
-    color: #555;
+    color: #000;
 }
 
 
@@ -510,8 +510,9 @@ main {
     height: 5rem;
     width: 100%;
     border: 1px solid black;
-    padding: 0.1rem 0.1rem;
+    padding: 0.5rem 0.5rem;
 }
+
 .deals-header .section-title {
     align-self: center;
     font-weight: 700;
@@ -553,12 +554,55 @@ main {
 
 .price span {
     text-decoration: line-through;
+    font-size: 11px;
+    color: #aaa;
+}
+
+.price {
+    font-size: 14px;
+    color: #555;
 }
 
 #thumb-one {
     background-image: url("https://cdnp3.stackassets.com/d272d065e8025834a90576741d5ba6209466d39c/store/3db6b2710f144d7253142a8d2606cc025c92fa30a511dcf1e2cc2dc53b97/sale_17608_primary_image.jpg");
     width: 100%;
 }
+
+#thumb-two {
+    background-image: url("https://cdnp0.stackassets.com/0b724ffef636797ad66a5db85e96e6eb414ca2e0/store/bc051476223305e7faf8fc40a4405a90555ef64c66febf43922c7f8e6477/sale_17727_primary_image.jpg");
+    width: 100%;
+}
+
+#thumb-three {
+    background-image: url("https://cdnp3.stackassets.com/eb754228e4d49d21727921d330009a0456422d6e/store/f31b473f323f79aade0c59f97a8f2bec65885a474766639e94fd357fd953/sale_17618_primary_image.jpg");
+    width: 100%;
+}
+
+#thumb-four {
+    background-image: url("https://cdnp1.stackassets.com/f1fe66304091f4eab30f4b4f3e151ee648a6a6ea/store/292957d3d8fc9f276bea046313708fc80bac1edd87dd5f9b155e2a617749/sale_17605_primary_image.jpg");
+    width: 100%;
+}
+
+#thumb-five {
+    background-image: url("https://cdnp0.stackassets.com/32cdfbbcfc023fe935e55ddd400f24e73cf57d51/store/3ce57becc77fb90017437f2ffe5ec803c87b17ab2c6c1727fa204e38f14c/sale_17543_primary_image.jpg");
+    width: 100%;
+}
+
+#thumb-six {
+    background-image: url("https://cdnp3.stackassets.com/67f53a76e9213d72193acbccabb50af8eb11bd7d/store/6d8c7384f822f13bba37e8e85af7344d04987b49e64774e597f333055112/sale_17729_primary_image.jpg");
+    width: 100%;
+}
+
+#thumb-seven {
+    background-image: url("https://cdnp3.stackassets.com/cee00ee25b179291c563df5676ac24e6615385ff/store/8253354ce64a95a4cec869d091144c652b38466b3077923ef6827d0031ec/sale_16206_primary_image.jpg");
+    width: 100%;
+}
+
+#thumb-eight {
+    background-image: url("https://cdnp0.stackassets.com/e20dfeab58c4ba26ff88595e3ad1fb75a0794823/store/ead8b20727449077b8f0382697d0371f09921bd682a152aac393feb27943/sale_15336_primary_image.jpg");
+    width: 100%;
+}
+
 
 /**** FOOTER Section ****/
 footer {
