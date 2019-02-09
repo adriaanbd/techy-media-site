@@ -46,6 +46,10 @@ main {
     justify-content: center;
 }
 
+.jc-sa {
+    justify-content: space-around;
+}
+
 .c-pointer {
     cursor: pointer;
 }
@@ -616,7 +620,7 @@ footer {
 }
 
 .top {
-    background-color: grey;
+    background-color: #131313;
     min-height: 60%; /* 60% of of 280px */
     min-width: 100%;
 }
@@ -628,12 +632,38 @@ footer {
 }
 
 .footer-wrapper {
-    background-color: pink;
+    /* background-color: pink; */
     min-height:80px; /* 50% of top footer row - must edit this */
     min-width: 100%;
     border: 1px solid black;
 
 }
+
+
+#footer-social .fa-circle {
+    color: #333;
+}
+
+#footer-social .fa-stack:hover .fa-circle {
+    color: #131313;
+}
+
+#footer-nav {
+    margin-top: 2rem;
+}
+
+#footer-nav .footer-nav-link {
+    text-transform: uppercase;
+    color: #888;
+    font-weight: 200;
+    font-size: 0.8rem;
+    margin: 0 0.5rem;
+}
+
+#footer-nav .footer-nav-link:hover {
+    color: #fff;
+}
+
 
 /*** Sticky nav experiment ***/
 
