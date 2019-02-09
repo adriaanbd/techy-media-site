@@ -41,6 +41,11 @@ main {
 .jc-sb {
     justify-content: space-between;
 }
+
+.jc-c {
+    justify-content: center;
+}
+
 .c-pointer {
     cursor: pointer;
 }
@@ -469,6 +474,7 @@ main {
 
 .topic-news {
     width: 100%;
+    list-style-type: circle;
 }
 
 .topic-news .article::before {
@@ -477,6 +483,7 @@ main {
     display: inline-block;
     width: 1rem;
 }
+
 
 .topic-news .article {
     font-size: 0.8rem;
@@ -505,10 +512,43 @@ main {
     border: 1px solid black;
     padding: 0.1rem 0.1rem;
 }
+.deals-header .section-title {
+    align-self: center;
+    font-weight: 700;
+}
+
+.section-link {
+    align-self: center;
+    color: var(--orange);
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+
+.section-link:hover {
+    color: black;
+}
 
 .deal-thumb {
     background-size: 100% 100%;
     max-width: 75px;
+}
+
+.deal-content {
+    padding: 0.05rem 0.9rem;
+}
+
+.deal-title {
+    margin-bottom: 0.3rem;
+}
+
+.deal-title a{
+    font-size: 0.9rem;
+    color: black;
+}
+
+.deal-title a:hover {
+    color: var(--orange);
+    text-decoration: underline;
 }
 
 .price span {
