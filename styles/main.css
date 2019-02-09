@@ -513,8 +513,8 @@ main {
 .deal {
     height: 5rem;
     width: 100%;
-    border: 1px solid black;
     padding: 0.5rem 0.5rem;
+    margin-bottom: 1rem;
 }
 
 .deals-header .section-title {
@@ -619,6 +619,7 @@ footer {
     align-items: center;
 }
 
+
 .top {
     background-color: #131313;
     min-height: 60%; /* 60% of of 280px */
@@ -632,14 +633,12 @@ footer {
 }
 
 .footer-wrapper {
-    /* background-color: pink; */
     min-height:80px; /* 50% of top footer row - must edit this */
     min-width: 100%;
     border: 1px solid black;
-
+    color: #888;
+    align-items: center;
 }
-
-
 #footer-social .fa-circle {
     color: #333;
 }
@@ -655,13 +654,25 @@ footer {
 #footer-nav .footer-nav-link {
     text-transform: uppercase;
     color: #888;
-    font-weight: 200;
+    font-weight: 400;
     font-size: 0.8rem;
     margin: 0 0.5rem;
 }
 
 #footer-nav .footer-nav-link:hover {
     color: #fff;
+}
+
+.footer-wrapper span img {
+    height: 9px;
+}
+
+.footer-wrapper span {
+    font-size: 13px;
+}
+
+#heart {
+    color: red;
 }
 
 
