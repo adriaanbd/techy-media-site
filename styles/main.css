@@ -1,15 +1,24 @@
+/*Variables*/
+:root {
+    --orange: #f42;
+}
 
 html {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 
-  *, *:before, *:after {
+*, *:before, *:after {
     box-sizing: inherit;
     margin: 0;
     padding: 0;
+}
+
+a {
+    text-decoration: none;
 }
 
 ul {
@@ -31,6 +40,18 @@ main {
 }
 .jc-sb {
     justify-content: space-between;
+}
+
+.jc-c {
+    justify-content: center;
+}
+
+.jc-sa {
+    justify-content: space-around;
+}
+
+.c-pointer {
+    cursor: pointer;
 }
 
 /**** START Navigation ****/
@@ -98,59 +119,494 @@ main {
 #cover {
     height: 100vh;
     width: 100%;
-    background-color: teal;
 }
-
 #main-cover-article {
     background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/01/nembear-796x448.jpg");
-    background-size: 100vw;
 }
 
-.cover-article-overlay {
-    background-image: linear-gradient(#000000, #000000);
-    background-size: 100vw;
-    height: 100%;
-    opacity: 0.6;
+#cover-top-right {
+    background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/01/coffee-bitcoin-cryptocurrency-blockchain-charlie-lee-litecoin-marketing-dominici-frisby-garrick-hileman-796x448.jpg");
+}
+
+#cover-bot-right {
+    background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/01/Cambridge-Audio-Yoyo-L-4-of-4-796x417.jpg");
 }
 
 .cover-article {
-    border: 1px solid black;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
     height: 33.33%;
     min-height: 110px;
+    align-items: flex-end;
+    margin: 0.3em 0;
+}
+
+.cover-article-details {
+    background-color:rgba(0, 0, 0, 0.5);
+    background-size: 100% 100%;
+    height: 100%;
+    width: 100%;
+    color: white;
+    padding-left: 0.8em;
+    padding-bottom: 0.8em;
+    justify-content: flex-end;
+}
+
+.cover-article * {
+    margin-top: 0.2rem;
+}
+
+.cover-article-details h2 {
+    font-size: 1.25rem; /* 20 / 16 */
+    font-weight: 400;
+}
+
+.cover-article-details h3 {
+    font-size: 0.875rem; /* 14 / 16 */
+    font-weight: 300;
+}
+
+.cover-byline {
+    font-size: 0.75rem; /* 12 / 16 */
+    font-weight: 300;
+    color: hsla(0, 0%, 100%, .6);
+    line-height: 1rem;
+}
+
+.cover-byline span {
+    margin-right: 0.7rem;
+}
+
+.cover-byline i {
+    font-size: 0.9rem;
+}
+
+.cover-byline a {
+    color: hsla(0, 0%, 100%, .6);
+}
+
+.cover-byline a:hover {
+    color: #fff;
 }
 
 /**** Latest News ****/
 .news-article {
     height: 4.6875rem; /*75/16*/
-    background-color: gold;
     width: 100%;
-    border: 1px solid black;
+    padding: 0.3em;
 }
+
+.section-title {
+    margin: 1rem 0.3rem;
+    font-size: 28px;
+    font-weight: 800;
+}
+
+.section-title a {
+    color: var(--orange);
+}
+.section-title a:hover {
+    color: black;
+}
+.story-image {
+    background-size: 100% 100%;
+    min-width: 4.6875rem;
+    max-width: 4.6875rem;
+    height: 100%;
+}
+
+/* background images for story images*/
+#one {
+    background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/01/4022759577_ce2520d658_o-Cropped-513x270.jpg");
+}
+#two {
+    background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/01/Opening-Ceremoni_25-May-2018_19107-1-516x270.jpg");
+}
+#three {
+    background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/01/4022759577_ce2520d658_o-Cropped-513x270.jpg");
+}
+#four {
+    background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/01/cookieminer-unit-42-cryptocurrency-blockchain-koto-coin-bitcoin-palo-alto-networks-malware-macos-mac-480x270.jpg");
+}
+#five {
+    background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/01/fu7xCLS-540x270.jpg");
+}
+#six {
+    background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/01/card-credit-card-mastercard-210742-516x270.jpg");
+}
+#seven {
+    background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/01/card-credit-card-mastercard-210742-516x270.jpg");
+}
+#eight {
+    background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/01/Untitled-design-17-516x270.png");
+}
+#nine {
+    background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/01/screenwise-516x270.png");
+}
+
+.story-description {
+    padding-left: 0.5em;
+    width:100%;
+}
+
+.story-description h4 {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.story-description h4 a {
+    color: #000;
+}
+.story-description h4 a:hover {
+    color: var(--orange);
+    text-decoration: underline;
+}
+
+.story-byline * {
+    font-size: 12px;
+    line-height: 18px;
+    padding-top: 0.08em; /* 2 / 16 */
+    font-weight: 300;
+    color: #aaa;
+}
+
 /*** Funding Section ***/
 .funding-card {
     height: 14.375rem;
-    background-color: green;
-    border: 1px solid black;
+    padding: 0.3em;
 }
 
+.funding-card:nth-last-child(1) {
+    display: none;
+}
+
+#funding-nav {
+    padding: 0.3em;
+    font-size: 14px;
+}
+
+.funding-nav-items {
+    padding: 0.6em 0;
+}
+
+.funding-nav-items a {
+    color: var(--orange);
+}
+
+.funding-nav-items a:hover {
+    color: #000;
+}
+
+.funding-details {
+    height: 55.217391304%;
+    font-size: 0.9em;
+    color: #555;
+    background-color: #FFFAF8;
+}
+
+.funding-details a {
+    color: #555;
+}
+
+.funding-details a:hover span {
+    color: #000;
+}
+
+.funding-details i {
+    color: #000;
+}
+
+.funding-details .news-wrapper {
+    border-top:  1px solid #FFCDC2;
+    height: 35%;
+    align-items: center;
+    font-size: 0.85em;
+}
+
+.funding-details .news-wrapper a {
+    margin-left: calc( 2.6875rem - 1.8375rem);
+}
+
+.funding-details .news-wrapper span {
+    color: #aaa;
+}
+
+.funding-card-header {
+    height: 44.782608696%; /* 6.4375rem; /* 103px */
+    position: relative;
+}
+
+.funding-logo {
+    width: 3.675rem;
+    height: 3.675rem;
+    position: absolute;
+    background-size: 100% 100%;
+    top: calc(41.75% - 1.8375rem);
+    margin-left: calc( 2.6875rem - 1.8375rem);
+}
+
+.funding-logo img {
+    height: 100%;
+    width:100%;
+}
+
+.funding-company {
+    height: 41.75%; /* 2.6875rem ~ 43px */
+    background-color: var(--orange);
+    color: #fff;
+    padding-left: calc(3.675rem + 1.7rem); /*width of image + margin-left of image * 2*/
+    justify-content: center;
+}
+
+.funding-company h4 {
+    font-weight: 400;
+    font-size: 1.15rem;
+}
+
+.funding-amt {
+    height: 58.25%; /* 60px ~ 3.75rem*/
+    background-color: rgba(255, 68, 34, 0.15);
+    padding-left: calc(3.675rem + 1.7rem); /*width of image + margin-left of image * 2*/
+    justify-content: center;
+    font-size: 1.15rem;
+
+}
+.funding-amt > div h5 {
+    font-weight: 800;
+    font-size: 1em;
+}
+
+.funding-amt p {
+    color: #555;
+    font-size: 0.6em;
+    font-weight: 300;
+}
+
+.tags-wrapper {
+    justify-content: center;
+    height: 65%;
+    margin-left: calc( 2.6875rem - 1.8375rem);
+    
+}
+
+.tags {
+    justify-items: center;
+}
+
+.tags span {
+    margin-left: 0.3em;
+}
 /*** topic Section ***/
 
-.topic-card {
-    min-height: 41.25rem; /* 660px / 16 px */
-    max-height: 52.5rem; /* 840px / 16px */
-    background-color: red;
-    width: 100%;
-    border: 1px solid black;
+#topics {
+    margin-top: 2em;
 }
+
+.topic-card {
+    height: 52.5rem; /* 840px / 16px */
+    min-height: 41.25rem; /* 660px / 16 px */
+    width: 100%;
+}
+.topic-cover {
+    background-size: 100% 100%;
+    height: 50%;
+}
+
+#topic-first {
+    background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/02/AI-and-blockchain-368x276.jpg");
+}
+
+#topic-two {
+    background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/09/inbox-368x276.png"); 
+}
+#topic-three {
+    background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/02/valentines-day-header-image-368x276.png"); 
+}
+#topic-four {
+    background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/08/google-spying-368x276.png"); 
+}
+#topic-five {
+    background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/01/unnamed-e1548340941939-368x276.jpg"); 
+}
+#topic-six {
+    background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/01/netflix-instagram-header-image-368x276.png"); 
+}
+#topic-seven {
+    background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/02/AI-and-blockchain-368x276.jpg"); 
+}
+#topic-eight {
+    background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/12/kik-kin-cryptocurrency-blockchain-tips-1-368x276.jpg"); 
+}
+#topic-nine {
+    background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/02/Gwyneth-Paltrow-368x276.jpg"); 
+}
+
+.latest-thumb {
+    background-size: 100% 100%;
+    min-width: 96px;
+    color: var(--orange);
+}
+
+.topic-latest {
+    justify-content: space-between;
+    height: 96px;
+    margin-top: 0.1rem;
+}
+
+.latest-copy {
+    background-color: rgba(255,68,34,.06);
+    padding: 0.5rem;
+    color: var(--orange);
+    line-height: 1.4;
+}
+
+.latest-section {
+    font-weight: 400;
+}
+
+.latest-title {
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+.latest-title:hover {
+    text-decoration: underline;
+}
+
+#thumb-first {
+    background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/09/bitcoin-cryptocurrency-blockchain-wallet.png");
+}
+
+.topic-news {
+    width: 100%;
+    list-style-type: circle;
+}
+
+.topic-news .article::before {
+    content: "\2022";
+    color: var(--orange);
+    display: inline-block;
+    width: 1rem;
+}
+
+
+.topic-news .article {
+    font-size: 0.8rem;
+    color: #555;
+    font-weight: 400;
+    margin-top: 0.7rem;
+    padding-bottom: 0.7rem;
+    border-bottom: 1px solid #555;
+}
+
+.topic-news .article a {
+    color: #555;
+}
+
+.topic-news .article:hover a {
+    color: #000;
+}
+
+
 
 /**** DEALS Section ****/
 
 .deal {
     height: 5rem;
     width: 100%;
-    background-color: lightblue;
-    border: 1px solid black;
+    padding: 0.5rem 0.5rem;
+    margin-bottom: 1rem;
 }
+
+.deals-header .section-title {
+    align-self: center;
+    font-weight: 700;
+}
+
+.section-link {
+    align-self: center;
+    color: var(--orange);
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+
+.section-link:hover {
+    color: black;
+}
+
+.deal-thumb {
+    background-size: 100% 100%;
+    max-width: 75px;
+}
+
+.deal-content {
+    padding: 0.05rem 0.9rem;
+}
+
+.deal-title {
+    margin-bottom: 0.3rem;
+}
+
+.deal-title a{
+    font-size: 0.9rem;
+    color: black;
+}
+
+.deal-title a:hover {
+    color: var(--orange);
+    text-decoration: underline;
+}
+
+.price span {
+    text-decoration: line-through;
+    font-size: 11px;
+    color: #aaa;
+}
+
+.price {
+    font-size: 14px;
+    color: #555;
+}
+
+#thumb-one {
+    background-image: url("https://cdnp3.stackassets.com/d272d065e8025834a90576741d5ba6209466d39c/store/3db6b2710f144d7253142a8d2606cc025c92fa30a511dcf1e2cc2dc53b97/sale_17608_primary_image.jpg");
+    width: 100%;
+}
+
+#thumb-two {
+    background-image: url("https://cdnp0.stackassets.com/0b724ffef636797ad66a5db85e96e6eb414ca2e0/store/bc051476223305e7faf8fc40a4405a90555ef64c66febf43922c7f8e6477/sale_17727_primary_image.jpg");
+    width: 100%;
+}
+
+#thumb-three {
+    background-image: url("https://cdnp3.stackassets.com/eb754228e4d49d21727921d330009a0456422d6e/store/f31b473f323f79aade0c59f97a8f2bec65885a474766639e94fd357fd953/sale_17618_primary_image.jpg");
+    width: 100%;
+}
+
+#thumb-four {
+    background-image: url("https://cdnp1.stackassets.com/f1fe66304091f4eab30f4b4f3e151ee648a6a6ea/store/292957d3d8fc9f276bea046313708fc80bac1edd87dd5f9b155e2a617749/sale_17605_primary_image.jpg");
+    width: 100%;
+}
+
+#thumb-five {
+    background-image: url("https://cdnp0.stackassets.com/32cdfbbcfc023fe935e55ddd400f24e73cf57d51/store/3ce57becc77fb90017437f2ffe5ec803c87b17ab2c6c1727fa204e38f14c/sale_17543_primary_image.jpg");
+    width: 100%;
+}
+
+#thumb-six {
+    background-image: url("https://cdnp3.stackassets.com/67f53a76e9213d72193acbccabb50af8eb11bd7d/store/6d8c7384f822f13bba37e8e85af7344d04987b49e64774e597f333055112/sale_17729_primary_image.jpg");
+    width: 100%;
+}
+
+#thumb-seven {
+    background-image: url("https://cdnp3.stackassets.com/cee00ee25b179291c563df5676ac24e6615385ff/store/8253354ce64a95a4cec869d091144c652b38466b3077923ef6827d0031ec/sale_16206_primary_image.jpg");
+    width: 100%;
+}
+
+#thumb-eight {
+    background-image: url("https://cdnp0.stackassets.com/e20dfeab58c4ba26ff88595e3ad1fb75a0794823/store/ead8b20727449077b8f0382697d0371f09921bd682a152aac393feb27943/sale_15336_primary_image.jpg");
+    width: 100%;
+}
+
 
 /**** FOOTER Section ****/
 footer {
@@ -163,8 +619,9 @@ footer {
     align-items: center;
 }
 
+
 .top {
-    background-color: grey;
+    background-color: #131313;
     min-height: 60%; /* 60% of of 280px */
     min-width: 100%;
 }
@@ -176,12 +633,48 @@ footer {
 }
 
 .footer-wrapper {
-    background-color: pink;
     min-height:80px; /* 50% of top footer row - must edit this */
     min-width: 100%;
     border: 1px solid black;
-
+    color: #888;
+    align-items: center;
 }
+#footer-social .fa-circle {
+    color: #333;
+}
+
+#footer-social .fa-stack:hover .fa-circle {
+    color: #131313;
+}
+
+#footer-nav {
+    margin-top: 2rem;
+}
+
+#footer-nav .footer-nav-link {
+    text-transform: uppercase;
+    color: #888;
+    font-weight: 400;
+    font-size: 0.8rem;
+    margin: 0 0.5rem;
+}
+
+#footer-nav .footer-nav-link:hover {
+    color: #fff;
+}
+
+.footer-wrapper span img {
+    height: 9px;
+}
+
+.footer-wrapper span {
+    font-size: 13px;
+}
+
+#heart {
+    color: red;
+}
+
 
 /*** Sticky nav experiment ***/
 
