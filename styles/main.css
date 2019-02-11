@@ -817,6 +817,10 @@ footer {
         min-width: 100%;
     }
 
+    .story-description {
+        margin-top: 0.5rem;
+        padding-left: 0;
+    }
     /* End News Articles */
 
     /* Funding Section */
