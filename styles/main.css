@@ -63,59 +63,57 @@ section:nth-child(n+2):nth-last-child(n+2) {
 
 /**** START Navigation ****/
 
-#top-nav {
-    height: 5rem; /* 80px / 16px */
-    border: 1px solid black;
+ul {
+    list-style-type: none;
 }
 
-#first {
-    display: none;
+header {
+    display: grid;
+    height: 5rem;
+    grid-template-rows: 50px 1fr;
+    grid-template-columns: 6.5rem repeat(9, 1fr);
 }
 
-#first-second-wrapper {
-    width: 100%;
+nav {
+    display: grid;
+    grid-column: span 9;
+    grid-template-columns: repeat(7, 1fr);
 }
 
-#second {
-    background-color: #fefefe;
-    color: #555;
-    justify-content: space-between;
-    border: 1px solid black;
-    width: 100%;
+#brand {
+    grid-column: span 1;
+    background: linear-gradient(to bottom right,#c09,#f42 85%)
 }
 
-#right {
+#topnav {
     align-items: center;
-}
-
-#third {
-    height: 37.5%;
-    width: 100%;
-    background-color: #ffdd33;
-}
-
-
-.nav-wrapper {
-    height: 62.5%;
-}
-
-
-#brand-logo {
     display: none;
-    width: 6.6875rem;
-    background-color: lightblue;
+    grid-row: 1;
+    grid-column: span 8;
+    background-color: lightcoral;
 }
 
-.brand-logo-sticky, #brand-logo {
-    width: 6.6875rem; /*107px/16px */
-    background-color: pink;
-    height: 100%;
+#basenav {
+    align-items: center;
+    display: none;
 }
 
-.brand-logo-sticky {
-    height: 50px;
+.seme {
+    grid-row: 1;
+    grid-column: 6 / 7;
+    align-self: center;
+    justify-self: end;
+    margin-right: 1em;
 }
 
+#menu {
+    grid-column: 7;
+}
+
+#alert {
+    grid-column: 1 / -1;
+    background-color: yellow;
+}
 
 /**** END Navigation ****/
 
@@ -695,90 +693,46 @@ footer {
     color: red;
 }
 
-
-/*** Sticky nav experiment ***/
-
-#sticky-nav {
-    display: none; /* DISPLAY NONE REMEMBER!!!! */
-    width:100%;
-    position: sticky;
-    top:0px;
-}
-
-.sticky-nav-wrapper {
-    height: 5rem;
-    width: 100%;
-}
-#second-sticky {
-    /* height: 3.125rem;  50px; */
-    /* height: 100%; */
-    background-color: #fefefe;
-    color: #555;
-    justify-content: space-between;
-    border: 1px solid black;
-    width: 100%;
-}
-#right-sticky {
-    align-items: center;
-
-}
-
-#third-sticky {
-    height: 37.5%;
-    width: 100%;
-    background-color: #ffdd33;
-}
- /** end sticky nav experiment **/
-
 /******  Width >= 786px < 1024 ******/
 
 @media only screen and (min-width: 768px) {
     /* Navigation */
-    #top-nav {
-        height: 6.875rem; /* 110/16 */
+    header {
+        grid-template-rows: 1fr 50px 1fr;
+        height: 6.875rem;
     }
 
-    .nav-wrapper {
-        height: 72.73%;
+    #brand {
+        grid-row: span 2;
     }
 
-    #brand-logo {
-        display: flex;
-    }
-
-
-    #brand-logo-sticky {
+    #menu {
         display: none;
     }
 
-    #first {
+    nav {
+        grid-template-rows: 1fr 50px;
+        grid-row: span 2;
+    }
+
+    #search {
+        grid-column: -1;
+    }
+
+    #topnav {
         display: flex;
-        /* height: 30px;  27.2727273%; */
-        height: 37.5%;
-        background-color: black;
     }
 
-    #second {
-        width: 100%;
-        height: 62.5%;
-    }
-
-    #second #left .nav-item, #second-sticky #left-sticky .nav-item {
+    #basenav {
+        
         display: flex;
-        width: 80px;
-        /* height: 100%; */
-        border: 1px dashed red;
+        grid-row: 2;
     }
 
-    #burger-menu, #burger-menu-sticky {
-        display: none;
+    .seme {
+        grid-row: 2;
+        align-self: center;
     }
-
-    #third {
-        /* height: 30px;  27.2727273% */
-        height: 27.27%
-    }
-
 
     /* End Navigation */
 
@@ -911,8 +865,12 @@ footer {
 /******  Width >= 1024px ******/
 
 @media only screen and (min-width: 1024px) {
-    #brand-logo {
+    #brand {
         display: none;
+    }
+
+    nav {
+        grid-column: 1 / -1;
     }
 
     .news-article {
