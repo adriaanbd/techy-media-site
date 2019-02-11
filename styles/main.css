@@ -82,7 +82,13 @@ nav {
 
 #brand {
     grid-column: span 1;
-    background: linear-gradient(to bottom right,#c09,#f42 85%)
+    background: linear-gradient(to bottom right,#c09,#f42 85%);
+    padding: 1.2rem;
+    align-items: center;
+}
+
+#brand img {
+    width: 100%;
 }
 
 #topnav {
@@ -104,16 +110,31 @@ nav {
     align-self: center;
     justify-self: end;
     margin-right: 1em;
+    font-size: 1.2rem;
 }
 
 #menu {
     grid-column: 7;
+    color: var(--orange);
+    margin-right: 2rem;
+}
+
+#search {
+    color: #aaa;
+}
+
+#search i:hover {
+    color: #555;
 }
 
 #alert {
     grid-column: 1 / -1;
-    background-color: yellow;
+    background-color: #fd3;
+    color: #000;
+    align-items: center;
+    font-size: 0.65rem;
 }
+
 
 /**** END Navigation ****/
 
@@ -724,9 +745,13 @@ footer {
     }
 
     #basenav {
-        
+        color: #aaa;
         display: flex;
         grid-row: 2;
+    }
+
+    #basenav li:nth-child(n+6) {
+        display: none;
     }
 
     .seme {
@@ -872,6 +897,7 @@ footer {
     nav {
         grid-column: 1 / -1;
     }
+
 
     .news-article {
         width: 25%;
