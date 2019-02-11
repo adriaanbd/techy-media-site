@@ -188,7 +188,7 @@ main {
 
 .cover-byline a:hover {
     color: #fff;
-} */
+} 
 
 /**** Latest News ****/
 .news-article {
@@ -845,9 +845,16 @@ footer {
     }
 
     .topic-card {
-        width: 50%;
+        width: 49.5%;
         min-height: 43.375rem;
         max-height: 45.31rem;
+    }
+    .topic-card:nth-child(odd) {
+        margin-left: 1%;
+    }
+
+    .topic-card:nth-child(n + 4){
+        margin-top: 3rem;
     }
 
     #deal-wrapper {
