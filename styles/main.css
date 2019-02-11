@@ -122,7 +122,7 @@ section:nth-child(n+2):nth-last-child(n+2) {
 /**** Cover Article SEction ****/
 
 #cover {
-    height: 60vh;
+    height: 85vh;
     width: 100%;
 }
 
@@ -138,6 +138,10 @@ section:nth-child(n+2):nth-last-child(n+2) {
     background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/01/Cambridge-Audio-Yoyo-L-4-of-4-796x417.jpg");
 }
 
+#cover-top-right,
+#cover-bot-right {
+    margin-top: 0.45rem;
+}
 .cover-article {
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -780,6 +784,7 @@ footer {
 
     /* cover*/
     #cover {
+        height: 60vh;
         flex-direction: row;
         flex-flow: column wrap;
     }
@@ -789,6 +794,7 @@ footer {
     }
     #cover-top-right,
     #cover-bot-right {
+        margin-top: 0;
         height: 49%;
         width: 40%;
     }
