@@ -11,66 +11,44 @@
     <title>The Next Web Replica</title>
 </head>
 <body>
-    <nav class="flex col" id="top-nav">
-        <div class="nav-wrapper flex">
-            <div id="brand-logo"></div>
-            <div class="flex col" id="first-second-wrapper">
-                <ul class="nav-row flex" id="first">
-                    <li class="nav-item"></li>
-                    <li class="nav-item"></li>
-                    <li class="nav-item"></li>
-                    <li class="nav-item"></li>
-                    <li class="nav-item"></li>
-                </ul>
-                <div class="nav-row flex" id="second">
-                    <div class="brand-logo-sticky" id="brand-logo-sticky"></div>
-                    <ul class="nav-col flex" id="left">
-                        <li class="nav-item"></li>
-                        <li class="nav-item"></li>
-                        <li class="nav-item"></li>
-                        <li class="nav-item"></li>
-                        <li class="nav-item"></li>
-                        <li class="nav-item"></li>
-                        <li class="nav-item"></li>
-                    </ul>
-                    <div class="nav-col flex" id="right">
-                        <div class="nav-item" id="search"><i class="fas fa-search"></i></div>
-                        <div class="nav-item" id="burger-menu"><i class="fas fa-bars"></i></div>
-                    </div>
-                </div>
-            </div>
+    <header>
+        <div id="brand" class="flex">
+            <img alt="The Next Web" src="https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/tnw.svg">
         </div>
-        <!--END OF NAV WRAPPER -->
-        <div class="nav-row" id="third">
-
+        <nav>
+            <ul id="topnav">
+                <li class="c-pointer">New</li>
+                <li class="c-pointer">Events</li>
+                <li class="c-pointer">Business</li>
+                <li class="c-pointer">AMAs</li>
+                <li class="c-pointer">Spaces</li>
+            </ul>
+            <ul id="basenav">
+                <li class="c-pointer">
+                    Latest
+                </li>
+                <li class="c-pointer">
+                    Hard Fork
+                </li>
+                <li class="c-pointer">
+                    Plugged
+                </li>
+                <li class="c-pointer">
+                    The Next Police
+                </li>
+                <li class="c-pointer">
+                    Fundamentals
+                </li>
+                <li class="c-pointer">IOT Lab</li>
+                <li class="c-pointer">Investing 2.0</li>
+            </ul>
+            <div id="search" class="seme c-pointer"><i class="fas fa-search"></i></div>
+            <div id="menu" class="seme c-pointer"><i class="fas fa-bars"></i></div>
+        </nav>
+        <div id="alert" class="flex jc-c">
+            <span class="c">Looking for your next team outing? Come to TNW2019! Check out our group deals →</span>
         </div>
-
-    </nav>
-    <!--END OF NAV -->
-    <nav class="flex col" id="sticky-nav">
-        <div class="sticky-nav-wrapper">
-            <div class="nav-row flex" id="second-sticky">
-                <div class="brand-logo-sticky"></div>
-                <ul class="nav-col flex" id="left-sticky">
-                    <li class="nav-item"></li>
-                    <li class="nav-item"></li>
-                    <li class="nav-item"></li>
-                    <li class="nav-item"></li>
-                    <li class="nav-item"></li>
-                    <li class="nav-item"></li>
-                    <li class="nav-item"></li>
-                </ul>
-                <div class="nav-col flex" id="right-sticky">
-                    <div class="nav-item" id="search-sticky"><i class="fas fa-search"></i></div>
-                    <div class="nav-item" id="burger-menu-sticky"><i class="fas fa-bars"></i></div>
-                </div>
-            </div>
-            <div class="nav-row" id="third-sticky">
-
-            </div>
-        </div>
-
-    </nav>
+    </header>
     <main>
         <section class="flex col" id="cover">
             <h1 hidden>Main Cover Articles</h1>
@@ -474,7 +452,7 @@
                         <h5 class="latest-section">LATEST</h5>
                         <h4 class="latest-title c-pointer">Bitcoin trade volume drops sharply as volatility flattens</h4>
                     </div>
-                    <div class="latest-thumb" id="thumb-first"></div>
+                    <div class="latest-thumb" id="topic-thumb-first"></div>
                 </div>
                 <ul class="topic-news flex col">
                     <li class="article c-pointer flex">
@@ -531,7 +509,7 @@
                         <h5 class="latest-section">LATEST</h5>
                         <h4 class="latest-title c-pointer">Bitcoin trade volume drops sharply as volatility flattens</h4>
                     </div>
-                    <div class="latest-thumb" id="thumb-z"></div>
+                    <div class="latest-thumb" id="topic-thumb-two"></div>
                 </div>
                 <ul class="topic-news flex col">
                     <li class="article c-pointer flex">
@@ -588,7 +566,7 @@
                         <h5 class="latest-section">LATEST</h5>
                         <h4 class="latest-title c-pointer">Bitcoin trade volume drops sharply as volatility flattens</h4>
                     </div>
-                    <div class="latest-thumb" id="thumb-first"></div>
+                    <div class="latest-thumb" id="topic-thumb-three"></div>
                 </div>
                 <ul class="topic-news flex col">
                     <li class="article c-pointer flex">
@@ -645,7 +623,7 @@
                         <h5 class="latest-section">LATEST</h5>
                         <h4 class="latest-title c-pointer">Bitcoin trade volume drops sharply as volatility flattens</h4>
                     </div>
-                    <div class="latest-thumb" id="thumb-first"></div>
+                    <div class="latest-thumb" id="topic-thumb-four"></div>
                 </div>
                 <ul class="topic-news flex col">
                     <li class="article c-pointer flex">
@@ -702,7 +680,7 @@
                         <h5 class="latest-section">LATEST</h5>
                         <h4 class="latest-title c-pointer">Bitcoin trade volume drops sharply as volatility flattens</h4>
                     </div>
-                    <div class="latest-thumb" id="thumb-first"></div>
+                    <div class="latest-thumb" id="topic-thumb-five"></div>
                 </div>
                 <ul class="topic-news flex col">
                     <li class="article c-pointer flex">
@@ -759,7 +737,7 @@
                         <h5 class="latest-section">LATEST</h5>
                         <h4 class="latest-title c-pointer">Bitcoin trade volume drops sharply as volatility flattens</h4>
                     </div>
-                    <div class="latest-thumb" id="thumb-first"></div>
+                    <div class="latest-thumb" id="topic-thumb-six"></div>
                 </div>
                 <ul class="topic-news flex col">
                     <li class="article c-pointer flex">
@@ -816,7 +794,7 @@
                         <h5 class="latest-section">LATEST</h5>
                         <h4 class="latest-title c-pointer">Bitcoin trade volume drops sharply as volatility flattens</h4>
                     </div>
-                    <div class="latest-thumb" id="thumb-first"></div>
+                    <div class="latest-thumb" id="topic-thumb-seven"></div>
                 </div>
                 <ul class="topic-news flex col">
                     <li class="article c-pointer flex">
@@ -873,7 +851,7 @@
                         <h5 class="latest-section">LATEST</h5>
                         <h4 class="latest-title c-pointer">Bitcoin trade volume drops sharply as volatility flattens</h4>
                     </div>
-                    <div class="latest-thumb" id="thumb-first"></div>
+                    <div class="latest-thumb" id="topic-thumb-eight"></div>
                 </div>
                 <ul class="topic-news flex col">
                     <li class="article c-pointer flex">
@@ -930,7 +908,7 @@
                         <h5 class="latest-section">LATEST</h5>
                         <h4 class="latest-title c-pointer">Bitcoin trade volume drops sharply as volatility flattens</h4>
                     </div>
-                    <div class="latest-thumb" id="thumb-first"></div>
+                    <div class="latest-thumb" id="topic-thumb-nine"></div>
                 </div>
                 <ul class="topic-news flex col">
                     <li class="article c-pointer flex">

@@ -29,7 +29,7 @@ main {
     margin: 0.1em 0.5em;
 }
 
-section:nth-child(n+2):nth-last-child(n+2) {
+section:nth-child(n+2):nth-last-child(n+1) {
     max-width: 1194px;
     margin: auto;
 }
@@ -63,57 +63,99 @@ section:nth-child(n+2):nth-last-child(n+2) {
 
 /**** START Navigation ****/
 
-#top-nav {
-    height: 5rem; /* 80px / 16px */
-    border: 1px solid black;
+ul {
+    list-style-type: none;
 }
 
-#first {
-    display: none;
+header {
+    display: grid;
+    height: 5rem;
+    grid-template-rows: 50px 1fr;
+    grid-template-columns: 6.5rem repeat(9, 1fr);
 }
 
-#first-second-wrapper {
-    width: 100%;
+nav {
+    display: grid;
+    grid-column: span 9;
+    grid-template-columns: repeat(7, 1fr);
 }
 
-#second {
-    background-color: #fefefe;
-    color: #555;
-    justify-content: space-between;
-    border: 1px solid black;
-    width: 100%;
-}
-
-#right {
+#brand {
+    grid-column: span 1;
+    background: linear-gradient(to bottom right,#c09,#f42 85%);
+    padding: 1.2rem;
     align-items: center;
 }
 
-#third {
-    height: 37.5%;
+#brand img {
     width: 100%;
-    background-color: #ffdd33;
 }
 
-
-.nav-wrapper {
-    height: 62.5%;
-}
-
-
-#brand-logo {
+#topnav {
+    align-items: center;
     display: none;
-    width: 6.6875rem;
-    background-color: lightblue;
+    grid-row: 1;
+    grid-column: span 8;
+    background-color: #000;
+    color: #aaa;
+    font-size: 0.9rem;
+    padding-left: 1rem;
 }
 
-.brand-logo-sticky, #brand-logo {
-    width: 6.6875rem; /*107px/16px */
-    background-color: pink;
-    height: 100%;
+#basenav {
+    grid-column: span 7;
+    align-items: center;
+    display: none;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    padding-left: 1rem;
 }
 
-.brand-logo-sticky {
-    height: 50px;
+#topnav li {
+    margin: 0 0.5rem;
+}
+
+#topnav li:hover {
+    color: white;
+}
+
+#basenav li {
+    margin: 0 0.5rem;
+}
+
+#basenav li:hover {
+    color: #000;
+}
+
+.seme {
+    grid-row: 1;
+    grid-column: 6 / 7;
+    align-self: center;
+    justify-self: end;
+    margin-right: 1em;
+    font-size: 1.2rem;
+}
+
+#menu {
+    grid-column: 7;
+    color: var(--orange);
+    margin-right: 2rem;
+}
+
+#search {
+    color: #aaa;
+}
+
+#search i:hover {
+    color: #555;
+}
+
+#alert {
+    grid-column: 1 / -1;
+    background-color: #fd3;
+    color: #000;
+    align-items: center;
+    font-size: 0.75rem;
 }
 
 
@@ -490,6 +532,8 @@ section:nth-child(n+2):nth-last-child(n+2) {
     background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/09/bitcoin-cryptocurrency-blockchain-wallet.png");
 }
 
+
+
 .topic-news {
     width: 100%;
 }
@@ -618,12 +662,12 @@ section:nth-child(n+2):nth-last-child(n+2) {
 }
 
 #thumb-seven {
-    background-image: url("https://cdnp3.stackassets.com/cee00ee25b179291c563df5676ac24e6615385ff/store/8253354ce64a95a4cec869d091144c652b38466b3077923ef6827d0031ec/sale_16206_primary_image.jpg");
+    background-image: url("https://cdnp0.stackassets.com/e20dfeab58c4ba26ff88595e3ad1fb75a0794823/store/ead8b20727449077b8f0382697d0371f09921bd682a152aac393feb27943/sale_15336_primary_image.jpg");
     width: 100%;
 }
 
 #thumb-eight {
-    background-image: url("https://cdnp0.stackassets.com/e20dfeab58c4ba26ff88595e3ad1fb75a0794823/store/ead8b20727449077b8f0382697d0371f09921bd682a152aac393feb27943/sale_15336_primary_image.jpg");
+    background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/02/Untitled-design-1-2-516x270.png");
     width: 100%;
 }
 
@@ -695,90 +739,50 @@ footer {
     color: red;
 }
 
-
-/*** Sticky nav experiment ***/
-
-#sticky-nav {
-    display: none; /* DISPLAY NONE REMEMBER!!!! */
-    width:100%;
-    position: sticky;
-    top:0px;
-}
-
-.sticky-nav-wrapper {
-    height: 5rem;
-    width: 100%;
-}
-#second-sticky {
-    /* height: 3.125rem;  50px; */
-    /* height: 100%; */
-    background-color: #fefefe;
-    color: #555;
-    justify-content: space-between;
-    border: 1px solid black;
-    width: 100%;
-}
-#right-sticky {
-    align-items: center;
-
-}
-
-#third-sticky {
-    height: 37.5%;
-    width: 100%;
-    background-color: #ffdd33;
-}
- /** end sticky nav experiment **/
-
 /******  Width >= 786px < 1024 ******/
 
 @media only screen and (min-width: 768px) {
     /* Navigation */
-    #top-nav {
-        height: 6.875rem; /* 110/16 */
+    header {
+        grid-template-rows: 1fr 50px 1fr;
+        height: 6.875rem;
     }
 
-    .nav-wrapper {
-        height: 72.73%;
+    #brand {
+        grid-row: span 2;
     }
 
-    #brand-logo {
-        display: flex;
-    }
-
-
-    #brand-logo-sticky {
+    #menu {
         display: none;
     }
 
-    #first {
+    nav {
+        grid-template-rows: 1fr 50px;
+        grid-row: span 2;
+    }
+
+    #search {
+        grid-column: -1;
+    }
+
+    #topnav {
         display: flex;
-        /* height: 30px;  27.2727273%; */
-        height: 37.5%;
-        background-color: black;
     }
 
-    #second {
-        width: 100%;
-        height: 62.5%;
-    }
-
-    #second #left .nav-item, #second-sticky #left-sticky .nav-item {
+    #basenav {
+        color: #aaa;
         display: flex;
-        width: 80px;
-        /* height: 100%; */
-        border: 1px dashed red;
+        grid-row: 2;
     }
 
-    #burger-menu, #burger-menu-sticky {
+    #basenav li:nth-child(n+6) {
         display: none;
     }
 
-    #third {
-        /* height: 30px;  27.2727273% */
-        height: 27.27%
+    .seme {
+        grid-row: 2;
+        align-self: center;
     }
-
 
     /* End Navigation */
 
@@ -911,9 +915,18 @@ footer {
 /******  Width >= 1024px ******/
 
 @media only screen and (min-width: 1024px) {
-    #brand-logo {
+    #brand {
         display: none;
     }
+
+    nav {
+        grid-column: 1 / -1;
+    }
+
+    #basenav li:nth-child(n+6) {
+        display: inline-block;
+    }
+
 
     .news-article {
         width: 25%;
