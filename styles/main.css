@@ -29,7 +29,7 @@ main {
     margin: 0.1em 0.5em;
 }
 
-section:nth-child(n+2):nth-last-child(n+2) {
+section:nth-child(n+2):nth-last-child(n+1) {
     max-width: 1194px;
     margin: auto;
 }
@@ -96,12 +96,35 @@ nav {
     display: none;
     grid-row: 1;
     grid-column: span 8;
-    background-color: lightcoral;
+    background-color: #000;
+    color: #aaa;
+    font-size: 0.9rem;
+    padding-left: 1rem;
 }
 
 #basenav {
+    grid-column: span 7;
     align-items: center;
     display: none;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    padding-left: 1rem;
+}
+
+#topnav li {
+    margin: 0 0.5rem;
+}
+
+#topnav li:hover {
+    color: white;
+}
+
+#basenav li {
+    margin: 0 0.5rem;
+}
+
+#basenav li:hover {
+    color: #000;
 }
 
 .seme {
@@ -132,7 +155,7 @@ nav {
     background-color: #fd3;
     color: #000;
     align-items: center;
-    font-size: 0.65rem;
+    font-size: 0.75rem;
 }
 
 
@@ -509,6 +532,8 @@ nav {
     background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/09/bitcoin-cryptocurrency-blockchain-wallet.png");
 }
 
+
+
 .topic-news {
     width: 100%;
 }
@@ -637,12 +662,12 @@ nav {
 }
 
 #thumb-seven {
-    background-image: url("https://cdnp3.stackassets.com/cee00ee25b179291c563df5676ac24e6615385ff/store/8253354ce64a95a4cec869d091144c652b38466b3077923ef6827d0031ec/sale_16206_primary_image.jpg");
+    background-image: url("https://cdnp0.stackassets.com/e20dfeab58c4ba26ff88595e3ad1fb75a0794823/store/ead8b20727449077b8f0382697d0371f09921bd682a152aac393feb27943/sale_15336_primary_image.jpg");
     width: 100%;
 }
 
 #thumb-eight {
-    background-image: url("https://cdnp0.stackassets.com/e20dfeab58c4ba26ff88595e3ad1fb75a0794823/store/ead8b20727449077b8f0382697d0371f09921bd682a152aac393feb27943/sale_15336_primary_image.jpg");
+    background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/02/Untitled-design-1-2-516x270.png");
     width: 100%;
 }
 
@@ -896,6 +921,10 @@ footer {
 
     nav {
         grid-column: 1 / -1;
+    }
+
+    #basenav li:nth-child(n+6) {
+        display: inline-block;
     }
 
 
