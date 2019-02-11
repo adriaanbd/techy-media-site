@@ -24,9 +24,16 @@ a {
 ul {
     list-style-type: none;
 }
+
 main {
     margin: 0.1em 0.5em;
 }
+
+section:nth-child(n+2):nth-last-child(n+2) {
+    max-width: 1194px;
+    margin: auto;
+}
+
 .flex {
     display: flex;
 }
@@ -70,8 +77,6 @@ main {
 }
 
 #second {
-    /* height: 3.125rem;  50px; */
-    /* height: 100%; */
     background-color: #fefefe;
     color: #555;
     justify-content: space-between;
@@ -139,7 +144,7 @@ main {
     height: 33.33%;
     min-height: 110px;
     align-items: flex-end;
-    margin-right: 1%;
+    margin-right: 0.4rem;
 }
 
 .cover-article-details {
@@ -483,10 +488,16 @@ main {
 
 .topic-news {
     width: 100%;
-    list-style-type: circle;
 }
 
-.topic-news .article::before {
+/* .topic-news .article::before {
+    content: "\2022";
+    color: var(--orange);
+    display: inline-block;
+    width: 1rem;
+} */
+
+.bullet::before {
     content: "\2022";
     color: var(--orange);
     display: inline-block;
@@ -616,6 +627,7 @@ main {
 /**** FOOTER Section ****/
 footer {
     height: 17.5rem; /*280px / 16px*/
+    width: 100vw;
 }
 
 .footer-row {
@@ -640,7 +652,6 @@ footer {
 .footer-wrapper {
     min-height:80px; /* 50% of top footer row - must edit this */
     min-width: 100%;
-    border: 1px solid black;
     color: #888;
     align-items: center;
 }
@@ -773,7 +784,7 @@ footer {
         flex-flow: column wrap;
     }
     #main-cover-article {
-        width: 59%;
+        width: 59.5%;
         height: 100%;
     }
     #cover-top-right,
@@ -783,7 +794,7 @@ footer {
     }
 
     #cover-top-right {
-        margin-bottom: 0.6%;
+        margin-bottom: 0.45rem;
     }
     /* end cover */
 
@@ -904,15 +915,24 @@ footer {
     }
 
     .topic-card {
-        width: 33.33%;
+        width: 32%;
         min-height: 42.8125rem; /* 685px */
         max-height: 43.75rem;
+        margin-top: 3rem;
+    }
+
+    .topic-card:nth-child(even) {
+        margin-left: 1%;
     }
 
     .deal {
         width: 25%;
         min-height: 18rem; /* 288px */
         max-height: 18.75rem; /* 300px */
+    }
+    
+    .bottom .footer-wrapper {
+        flex-direction: row;
     }
 
 }
