@@ -789,9 +789,19 @@ footer {
     }
 
     .news-article {
+        flex-direction: column;
         width: 33.33%;
         height: 11.25rem;
+        padding: 0.5rem;
+        margin-bottom: 1rem;
     }
+
+    .story-image {
+        min-height: 75%;
+        max-height: 75%;
+        min-width: 100%;
+    }
+
     /* End News Articles */
 
     /* Funding Section */
