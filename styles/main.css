@@ -286,6 +286,10 @@ main {
     font-size: 14px;
 }
 
+#funding-nav span {
+    display: none;
+}
+
 .funding-nav-items {
     padding: 0.6em 0;
 }
@@ -820,7 +824,19 @@ footer {
 
     #funding-nav {
         display: flex;
+        flex-direction: row;
     }
+
+    #funding-nav span {
+        display: inline-block;
+        margin: 0 1rem;
+        color: var(--orange);
+    }
+
+    .funding-header h2 {
+        margin-bottom: 0;
+    }
+
     /* End Funding Section */
 
     #topics {
