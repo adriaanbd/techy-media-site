@@ -488,7 +488,7 @@ nav {
     background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/01/netflix-instagram-header-image-368x276.png"); 
 }
 #topic-seven {
-    background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/02/AI-and-blockchain-368x276.jpg"); 
+    background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/02/pension-fund-cryptocurrency-pompliano-blockchain-fund-morgan-creek-1-368x276.jpg"); 
 }
 #topic-eight {
     background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/12/kik-kin-cryptocurrency-blockchain-tips-1-368x276.jpg"); 
@@ -529,10 +529,45 @@ nav {
     text-decoration: underline;
 }
 
-/* #thumb-first {
-    background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/09/bitcoin-cryptocurrency-blockchain-wallet.png");
-} */
+#topic-thumb-first {
+    background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/02/coinbase-developing-nations-blockchain-cryptocurrency-africa-latin-america-new-markets.jpg");
+    width: 100%;
+}
 
+#topic-thumb-two {
+    background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/02/World-Time-hed.jpg");
+    width: 100%;
+}
+
+#topic-thumb-three {
+    background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/02/Focal-Stellia.jpeg");
+    width: 100%;
+}
+
+#topic-thumb-four {
+    background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/02/Untitled-design-3-2.png");
+    width: 100%;
+}
+
+#topic-thumb-five {
+    background-image: url("https://cdnp0.stackassets.com/32cdfbbcfc023fe935e55ddd400f24e73cf57d51/store/3ce57becc77fb90017437f2ffe5ec803c87b17ab2c6c1727fa204e38f14c/sale_17543_primary_image.jpg");
+    width: 100%;
+}
+
+#topic-thumb-six {
+    background-image: url("https://cdnp3.stackassets.com/67f53a76e9213d72193acbccabb50af8eb11bd7d/store/6d8c7384f822f13bba37e8e85af7344d04987b49e64774e597f333055112/sale_17729_primary_image.jpg");
+    width: 100%;
+}
+
+#topic-thumb-seven {
+    background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/02/blockchain-europe.jpg");
+    width: 100%;
+}
+
+#topic-thumb-eight {
+    background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/02/Untitled-design-1-2-516x270.png");
+    width: 100%;
+}
 
 
 .topic-news {
@@ -626,43 +661,43 @@ nav {
 }
 
 
-#topic-thumb-first {
-    background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/02/coinbase-developing-nations-blockchain-cryptocurrency-africa-latin-america-new-markets.jpg");
+#thumb-one {
+    background-image: url("https://cdnp3.stackassets.com/d272d065e8025834a90576741d5ba6209466d39c/store/3db6b2710f144d7253142a8d2606cc025c92fa30a511dcf1e2cc2dc53b97/sale_17608_primary_image.jpg");
     width: 100%;
 }
 
-#topic-thumb-two {
-    background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/02/World-Time-hed.jpg");
+#thumb-two {
+    background-image: url("https://cdnp0.stackassets.com/0b724ffef636797ad66a5db85e96e6eb414ca2e0/store/bc051476223305e7faf8fc40a4405a90555ef64c66febf43922c7f8e6477/sale_17727_primary_image.jpg");
     width: 100%;
 }
 
-#topic-thumb-three {
-    background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/02/Focal-Stellia.jpeg");
+#thumb-three {
+    background-image: url("https://cdnp0.stackassets.com/f807e2525e8ddd1affe33811f3bd55bd6a7002fe/store/267ed39e12cc6940a190daad8bf68ae541ce2ffa5cde1cdd9807d098f0c9/sale_17679_primary_image.jpg");
     width: 100%;
 }
 
-#topic-thumb-four {
-    background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/02/Untitled-design-3-2.png");
+#thumb-four {
+    background-image: url("https://cdnp3.stackassets.com/eb754228e4d49d21727921d330009a0456422d6e/store/f31b473f323f79aade0c59f97a8f2bec65885a474766639e94fd357fd953/sale_17618_primary_image.jpg");
     width: 100%;
 }
 
-#topic-thumb-five {
+#thumb-five {
+    background-image: url("https://cdnp0.stackassets.com/4ea640481a5cc20e90ba32024b8e6c95f61f448a/store/7976005e114af1b91ceb3a6510caa3d7eba5e9a2e35616d7387a82ddad54/sale_17715_primary_image.jpg");
+    width: 100%;
+}
+
+#thumb-six {
     background-image: url("https://cdnp0.stackassets.com/32cdfbbcfc023fe935e55ddd400f24e73cf57d51/store/3ce57becc77fb90017437f2ffe5ec803c87b17ab2c6c1727fa204e38f14c/sale_17543_primary_image.jpg");
     width: 100%;
 }
 
-#topic-thumb-six {
+#thumb-seven {
     background-image: url("https://cdnp3.stackassets.com/67f53a76e9213d72193acbccabb50af8eb11bd7d/store/6d8c7384f822f13bba37e8e85af7344d04987b49e64774e597f333055112/sale_17729_primary_image.jpg");
     width: 100%;
 }
 
-#topic-thumb-seven {
-    background-image: url("https://cdnp0.stackassets.com/e20dfeab58c4ba26ff88595e3ad1fb75a0794823/store/ead8b20727449077b8f0382697d0371f09921bd682a152aac393feb27943/sale_15336_primary_image.jpg");
-    width: 100%;
-}
-
-#topic-thumb-eight {
-    background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/02/Untitled-design-1-2-516x270.png");
+#thumb-eight {
+    background-image: url("https://cdnp1.stackassets.com/f1fe66304091f4eab30f4b4f3e151ee648a6a6ea/store/292957d3d8fc9f276bea046313708fc80bac1edd87dd5f9b155e2a617749/sale_17605_primary_image.jpg");
     width: 100%;
 }
 
