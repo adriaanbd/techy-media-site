@@ -287,10 +287,10 @@ nav {
     background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/01/card-credit-card-mastercard-210742-516x270.jpg");
 }
 #seven {
-    background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/01/card-credit-card-mastercard-210742-516x270.jpg");
+    background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/01/Untitled-design-17-516x270.png");
 }
 #eight {
-    background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/01/Untitled-design-17-516x270.png");
+    background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/02/photo-1512615199361-5c7a110a8d11-404x270.jpeg");
 }
 #nine {
     background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/01/screenwise-516x270.png");
@@ -321,7 +321,9 @@ nav {
     font-weight: 300;
     color: #aaa;
 }
-
+.author a:hover {
+    color: #555;
+}
 /*** Funding Section ***/
 .funding-card {
     height: 14.375rem;
@@ -550,12 +552,12 @@ nav {
 }
 
 #topic-thumb-five {
-    background-image: url("https://cdnp0.stackassets.com/32cdfbbcfc023fe935e55ddd400f24e73cf57d51/store/3ce57becc77fb90017437f2ffe5ec803c87b17ab2c6c1727fa204e38f14c/sale_17543_primary_image.jpg");
+    background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/01/unnamed-e1548340941939.jpg");
     width: 100%;
 }
 
 #topic-thumb-six {
-    background-image: url("https://cdnp3.stackassets.com/67f53a76e9213d72193acbccabb50af8eb11bd7d/store/6d8c7384f822f13bba37e8e85af7344d04987b49e64774e597f333055112/sale_17729_primary_image.jpg");
+    background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/02/Untitled-design92.png");
     width: 100%;
 }
 
@@ -566,6 +568,10 @@ nav {
 
 #topic-thumb-eight {
     background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/02/Untitled-design-1-2-516x270.png");
+    width: 100%;
+}
+#topic-thumb-nine {
+    background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/02/KH3-Featured-Img.jpg");
     width: 100%;
 }
 
@@ -903,13 +909,10 @@ footer {
         width: 49.5%;
         min-height: 43.375rem;
         max-height: 45.31rem;
+        margin-top: 1rem;
     }
     .topic-card:nth-child(odd) {
         margin-left: 1%;
-    }
-
-    .topic-card:nth-child(n + 4){
-        margin-top: 3rem;
     }
     /* End of Topics Section */
 
