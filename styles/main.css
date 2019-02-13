@@ -731,8 +731,19 @@ footer {
     align-items: center;
 }
 
+#footer-social .fa-stack {
+    margin: 0 0.7rem;
+}
+
+#footer-social .social-icon {
+    font-size: 1.1rem;
+    margin-top: 0.45rem;
+    margin-left: 0.25rem;
+}
+
 #footer-social .fa-circle {
     color: #333;
+    font-size: 2.5rem;
 }
 
 #footer-social .fa-stack:hover .fa-circle {
