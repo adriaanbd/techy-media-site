@@ -585,7 +585,7 @@ nav {
     font-weight: 400;
     margin-top: 0.7rem;
     padding-bottom: 0.7rem;
-    border-bottom: 1px solid #555;
+    border-bottom: 1px solid rgb(231, 231, 231);
 }
 
 .topic-news .article a {
@@ -730,6 +730,7 @@ footer {
     color: #888;
     align-items: center;
 }
+
 #footer-social .fa-circle {
     color: #333;
 }
