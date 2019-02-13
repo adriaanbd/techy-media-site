@@ -58,10 +58,6 @@ section:nth-child(n+2):nth-last-child(n+1) {
 
 /**** START Navigation ****/
 
-ul {
-    list-style-type: none;
-}
-
 header {
     display: grid;
     height: 5rem;
@@ -817,7 +813,7 @@ footer {
 
     /* End Navigation */
 
-    /* cover*/
+    /* START Cover */
     #cover {
         height: 60vh;
         flex-direction: row;
@@ -837,7 +833,7 @@ footer {
     #cover-top-right {
         margin-bottom: 0.45rem;
     }
-    /* end cover */
+    /* END cover */
 
     /* News Articles*/
     #news-articles {
