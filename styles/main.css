@@ -1,7 +1,999 @@
 html {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
-  *, *:before, *:after {
+
+*, *:before, *:after {
     box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+main {
+    margin: 0.1em 0.5em;
+}
+
+section:nth-child(n+2):nth-last-child(n+1) {
+    max-width: 1194px;
+    margin: auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.col {
+    flex-direction: column;
+}
+.jc-sb {
+    justify-content: space-between;
+}
+
+.jc-c {
+    justify-content: center;
+}
+
+.jc-sa {
+    justify-content: space-around;
+}
+
+.c-pointer {
+    cursor: pointer;
+}
+
+/**** START Navigation ****/
+
+header {
+    display: grid;
+    height: 5rem;
+    grid-template-rows: 50px 1fr;
+    grid-template-columns: 6.5rem repeat(9, 1fr);
+}
+
+nav {
+    display: grid;
+    grid-column: span 9;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+#brand {
+    grid-column: span 1;
+    background: linear-gradient(to bottom right,#c09,#f42 85%);
+    padding: 1.2rem;
+    align-items: center;
+}
+
+#brand img {
+    width: 100%;
+}
+
+#topnav {
+    align-items: center;
+    display: none;
+    grid-row: 1;
+    grid-column: span 8;
+    background-color: #000;
+    color: #aaa;
+    font-size: 0.9rem;
+    padding-left: 1rem;
+}
+
+#basenav {
+    grid-column: span 7;
+    align-items: center;
+    display: none;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    padding-left: 1rem;
+}
+
+#topnav li {
+    margin: 0 0.5rem;
+}
+
+#topnav li:hover {
+    color: white;
+}
+
+#basenav li {
+    margin: 0 0.5rem;
+}
+
+#basenav li:hover {
+    color: #000;
+}
+
+.seme {
+    grid-row: 1;
+    grid-column: 6 / 7;
+    align-self: center;
+    justify-self: end;
+    margin-right: 1em;
+    font-size: 1.2rem;
+}
+
+#menu {
+    grid-column: 7;
+    color: #f42;
+    margin-right: 2rem;
+}
+
+#search {
+    color: #aaa;
+}
+
+#search i:hover {
+    color: #555;
+}
+
+#alert {
+    grid-column: 1 / -1;
+    background-color: #fd3;
+    color: #000;
+    align-items: center;
+    font-size: 0.75rem;
+}
+
+
+/**** END Navigation ****/
+
+/**** Cover Article SEction ****/
+
+#cover {
+    height: 85vh;
+    width: 100%;
+}
+
+#main-cover-article {
+    background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/01/nembear-796x448.jpg");
+}
+
+#cover-top-right {
+    background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/01/coffee-bitcoin-cryptocurrency-blockchain-charlie-lee-litecoin-marketing-dominici-frisby-garrick-hileman-796x448.jpg");
+}
+
+#cover-bot-right {
+    background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/01/Cambridge-Audio-Yoyo-L-4-of-4-796x417.jpg");
+}
+
+#cover-top-right,
+#cover-bot-right {
+    margin-top: 0.45rem;
+}
+.cover-article {
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 33.33%;
+    min-height: 110px;
+    align-items: flex-end;
+    margin-right: 0.4rem;
+}
+
+.cover-article-details {
+    background-color:rgba(0, 0, 0, 0.5);
+    background-size: 100% 100%;
+    height: 100%;
+    width: 100%;
+    color: white;
+    padding-left: 0.8em;
+    padding-bottom: 0.8em;
+    justify-content: flex-end;
+}
+
+.cover-article * {
+    margin-top: 0.2rem;
+}
+
+.cover-article-details h2 {
+    font-size: 1.25rem; /* 20 / 16 */
+    font-weight: 400;
+}
+
+.cover-article-details h3 {
+    font-size: 0.875rem; /* 14 / 16 */
+    font-weight: 300;
+}
+
+.cover-byline {
+    font-size: 0.75rem; /* 12 / 16 */
+    font-weight: 300;
+    color: hsla(0, 0%, 100%, .6);
+    line-height: 1rem;
+}
+
+.cover-byline span {
+    margin-right: 0.7rem;
+}
+
+.cover-byline i {
+    font-size: 0.9rem;
+}
+
+.cover-byline a {
+    color: hsla(0, 0%, 100%, .6);
+}
+
+.cover-byline a:hover {
+    color: #fff;
+} 
+
+/**** Latest News ****/
+.news-article {
+    height: 4.6875rem; /*75/16*/
+    width: 100%;
+    padding: 0.3em;
+}
+
+.section-title {
+    margin: 1rem 0.3rem;
+    font-size: 28px;
+    font-weight: 800;
+}
+
+.section-title a {
+    color: #f42;
+}
+.section-title a:hover {
+    color: black;
+}
+.story-image {
+    background-size: 100% 100%;
+    min-width: 4.6875rem;
+    max-width: 4.6875rem;
+    height: 100%;
+}
+
+/* background images for story images*/
+#one {
+    background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/01/4022759577_ce2520d658_o-Cropped-513x270.jpg");
+}
+#two {
+    background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/01/Opening-Ceremoni_25-May-2018_19107-1-516x270.jpg");
+}
+#three {
+    background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/01/4022759577_ce2520d658_o-Cropped-513x270.jpg");
+}
+#four {
+    background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/01/cookieminer-unit-42-cryptocurrency-blockchain-koto-coin-bitcoin-palo-alto-networks-malware-macos-mac-480x270.jpg");
+}
+#five {
+    background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/01/fu7xCLS-540x270.jpg");
+}
+#six {
+    background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/01/card-credit-card-mastercard-210742-516x270.jpg");
+}
+#seven {
+    background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/01/Untitled-design-17-516x270.png");
+}
+#eight {
+    background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/02/photo-1512615199361-5c7a110a8d11-404x270.jpeg");
+}
+#nine {
+    background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/01/screenwise-516x270.png");
+}
+
+.story-description {
+    padding-left: 0.5em;
+    width:100%;
+}
+
+.story-description h4 {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.story-description h4 a {
+    color: #000;
+}
+.story-description h4 a:hover {
+    color: #f42;
+    text-decoration: underline;
+}
+
+.story-byline * {
+    font-size: 12px;
+    line-height: 18px;
+    padding-top: 0.08em; /* 2 / 16 */
+    font-weight: 300;
+    color: #aaa;
+}
+.author a:hover {
+    color: #555;
+}
+/*** Funding Section ***/
+.funding-card {
+    height: 14.375rem;
+    padding: 0.3em;
+}
+
+.funding-card:nth-last-child(1) {
+    display: none;
+}
+
+#funding-nav {
+    padding: 0.3em;
+    font-size: 14px;
+}
+
+#funding-nav span {
+    display: none;
+}
+
+.funding-nav-items {
+    padding: 0.6em 0;
+}
+
+.funding-nav-items a {
+    color: #f42;
+}
+
+.funding-nav-items a:hover {
+    color: #000;
+}
+
+.funding-details {
+    height: 55.217391304%;
+    font-size: 0.9em;
+    color: #555;
+    background-color: #FFFAF8;
+}
+
+.funding-details a {
+    color: #555;
+}
+
+.funding-details a:hover span {
+    color: #000;
+}
+
+.funding-details i {
+    color: #000;
+}
+
+.funding-details .news-wrapper {
+    border-top:  1px solid #FFCDC2;
+    height: 35%;
+    align-items: center;
+    font-size: 0.85em;
+}
+
+.funding-details .news-wrapper a {
+    margin-left: calc( 2.6875rem - 1.8375rem);
+}
+
+.funding-details .news-wrapper span {
+    color: #aaa;
+}
+
+.funding-card-header {
+    height: 44.782608696%; /* 6.4375rem; /* 103px */
+    position: relative;
+}
+
+.funding-logo {
+    width: 3.675rem;
+    height: 3.675rem;
+    position: absolute;
+    background-size: 100% 100%;
+    top: calc(41.75% - 1.8375rem);
+    margin-left: calc( 2.6875rem - 1.8375rem);
+}
+
+.funding-logo img {
+    height: 100%;
+    width:100%;
+}
+
+.funding-company {
+    height: 41.75%; /* 2.6875rem ~ 43px */
+    background-color: #f42;
+    color: #fff;
+    padding-left: calc(3.675rem + 1.7rem); /*width of image + margin-left of image * 2*/
+    justify-content: center;
+}
+
+.funding-company h4 {
+    font-weight: 400;
+    font-size: 1.15rem;
+}
+
+.funding-amt {
+    height: 58.25%; /* 60px ~ 3.75rem*/
+    background-color: rgba(255, 68, 34, 0.15);
+    padding-left: calc(3.675rem + 1.7rem); /*width of image + margin-left of image * 2*/
+    justify-content: center;
+    font-size: 1.15rem;
+
+}
+.funding-amt > div h5 {
+    font-weight: 800;
+    font-size: 1em;
+}
+
+.funding-amt p {
+    color: #555;
+    font-size: 0.6em;
+    font-weight: 300;
+}
+
+.tags-wrapper {
+    justify-content: center;
+    height: 65%;
+    margin-left: calc( 2.6875rem - 1.8375rem);
+    
+}
+
+.tags {
+    justify-items: center;
+}
+
+.tags span {
+    margin-left: 0.3em;
+}
+/*** topic Section ***/
+
+#topics {
+    margin-top: 2em;
+}
+
+.topic-card {
+    height: 52.5rem; /* 840px / 16px */
+    min-height: 41.25rem; /* 660px / 16 px */
+    width: 100%;
+}
+.topic-cover {
+    background-size: 100% 100%;
+    height: 50%;
+}
+
+#topic-first {
+    background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/02/AI-and-blockchain-368x276.jpg");
+}
+
+#topic-two {
+    background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/09/inbox-368x276.png"); 
+}
+#topic-three {
+    background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/02/valentines-day-header-image-368x276.png"); 
+}
+#topic-four {
+    background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/08/google-spying-368x276.png"); 
+}
+#topic-five {
+    background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/01/unnamed-e1548340941939-368x276.jpg"); 
+}
+#topic-six {
+    background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/01/netflix-instagram-header-image-368x276.png"); 
+}
+#topic-seven {
+    background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/02/pension-fund-cryptocurrency-pompliano-blockchain-fund-morgan-creek-1-368x276.jpg"); 
+}
+#topic-eight {
+    background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/12/kik-kin-cryptocurrency-blockchain-tips-1-368x276.jpg"); 
+}
+#topic-nine {
+    background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/02/Gwyneth-Paltrow-368x276.jpg"); 
+}
+
+.latest-thumb {
+    background-size: 100% 100%;
+    min-width: 96px;
+    max-width: 96px;
+    color: #f42;
+}
+
+.topic-latest {
+    justify-content: space-between;
+    height: 96px;
+    margin-top: 0.1rem;
+}
+
+.latest-copy {
+    background-color: rgba(255,68,34,.06);
+    padding: 0.5rem;
+    color: #f42;
+    line-height: 1.4;
+}
+
+.latest-section {
+    font-weight: 400;
+}
+
+.latest-title {
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+.latest-title:hover {
+    text-decoration: underline;
+}
+
+#topic-thumb-first {
+    background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/02/coinbase-developing-nations-blockchain-cryptocurrency-africa-latin-america-new-markets.jpg");
+    width: 100%;
+}
+
+#topic-thumb-two {
+    background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/02/World-Time-hed.jpg");
+    width: 100%;
+}
+
+#topic-thumb-three {
+    background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/02/Focal-Stellia.jpeg");
+    width: 100%;
+}
+
+#topic-thumb-four {
+    background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/02/Untitled-design-3-2.png");
+    width: 100%;
+}
+
+#topic-thumb-five {
+    background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/01/unnamed-e1548340941939.jpg");
+    width: 100%;
+}
+
+#topic-thumb-six {
+    background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/02/Untitled-design92.png");
+    width: 100%;
+}
+
+#topic-thumb-seven {
+    background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/02/blockchain-europe.jpg");
+    width: 100%;
+}
+
+#topic-thumb-eight {
+    background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/02/Untitled-design-1-2-516x270.png");
+    width: 100%;
+}
+#topic-thumb-nine {
+    background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/02/KH3-Featured-Img.jpg");
+    width: 100%;
+}
+
+
+.topic-news {
+    width: 100%;
+}
+
+.bullet::before {
+    content: "\2022";
+    color: #f42;
+    display: inline-block;
+    width: 1rem;
+}
+
+
+.topic-news .article {
+    font-size: 0.8rem;
+    color: #555;
+    font-weight: 400;
+    margin-top: 0.7rem;
+    padding-bottom: 0.7rem;
+    border-bottom: 1px solid rgb(231, 231, 231);
+}
+
+.topic-news .article a {
+    color: #555;
+}
+
+.topic-news .article:hover a {
+    color: #000;
+}
+
+
+
+/**** DEALS Section ****/
+
+.deal {
+    height: 5rem;
+    width: 100%;
+    padding: 0.5rem 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.deals-header .section-title {
+    align-self: center;
+    font-weight: 700;
+}
+
+.section-link {
+    align-self: center;
+    color: #f42;
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+
+.section-link:hover {
+    color: black;
+}
+
+.deal-thumb {
+    background-size: 100% 100%;
+    max-width: 75px;
+}
+
+.deal-content {
+    padding: 0.05rem 0.9rem;
+}
+
+.deal-title {
+    margin-bottom: 0.3rem;
+}
+
+.deal-title a{
+    font-size: 0.9rem;
+    color: black;
+}
+
+.deal-title a:hover {
+    color: #f42;
+    text-decoration: underline;
+}
+
+.price span {
+    text-decoration: line-through;
+    font-size: 11px;
+    color: #aaa;
+}
+
+.price {
+    font-size: 14px;
+    color: #555;
+}
+
+
+#thumb-one {
+    background-image: url("https://cdnp3.stackassets.com/d272d065e8025834a90576741d5ba6209466d39c/store/3db6b2710f144d7253142a8d2606cc025c92fa30a511dcf1e2cc2dc53b97/sale_17608_primary_image.jpg");
+    width: 100%;
+}
+
+#thumb-two {
+    background-image: url("https://cdnp0.stackassets.com/0b724ffef636797ad66a5db85e96e6eb414ca2e0/store/bc051476223305e7faf8fc40a4405a90555ef64c66febf43922c7f8e6477/sale_17727_primary_image.jpg");
+    width: 100%;
+}
+
+#thumb-three {
+    background-image: url("https://cdnp0.stackassets.com/f807e2525e8ddd1affe33811f3bd55bd6a7002fe/store/267ed39e12cc6940a190daad8bf68ae541ce2ffa5cde1cdd9807d098f0c9/sale_17679_primary_image.jpg");
+    width: 100%;
+}
+
+#thumb-four {
+    background-image: url("https://cdnp3.stackassets.com/eb754228e4d49d21727921d330009a0456422d6e/store/f31b473f323f79aade0c59f97a8f2bec65885a474766639e94fd357fd953/sale_17618_primary_image.jpg");
+    width: 100%;
+}
+
+#thumb-five {
+    background-image: url("https://cdnp0.stackassets.com/4ea640481a5cc20e90ba32024b8e6c95f61f448a/store/7976005e114af1b91ceb3a6510caa3d7eba5e9a2e35616d7387a82ddad54/sale_17715_primary_image.jpg");
+    width: 100%;
+}
+
+#thumb-six {
+    background-image: url("https://cdnp0.stackassets.com/32cdfbbcfc023fe935e55ddd400f24e73cf57d51/store/3ce57becc77fb90017437f2ffe5ec803c87b17ab2c6c1727fa204e38f14c/sale_17543_primary_image.jpg");
+    width: 100%;
+}
+
+#thumb-seven {
+    background-image: url("https://cdnp3.stackassets.com/67f53a76e9213d72193acbccabb50af8eb11bd7d/store/6d8c7384f822f13bba37e8e85af7344d04987b49e64774e597f333055112/sale_17729_primary_image.jpg");
+    width: 100%;
+}
+
+#thumb-eight {
+    background-image: url("https://cdnp1.stackassets.com/f1fe66304091f4eab30f4b4f3e151ee648a6a6ea/store/292957d3d8fc9f276bea046313708fc80bac1edd87dd5f9b155e2a617749/sale_17605_primary_image.jpg");
+    width: 100%;
+}
+
+
+/**** FOOTER Section ****/
+footer {
+    height: 17.5rem; /*280px / 16px*/
+    width: 100vw;
+}
+
+.footer-row {
+    min-width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.top {
+    background-color: #131313;
+    min-height: 60%; /* 60% of of 280px */
+    min-width: 100%;
+}
+
+.bottom {
+    background-color: black;
+    min-height: 40%; /* */
+    min-width:100%;
+}
+
+.footer-wrapper {
+    min-height:80px; /* 50% of top footer row - must edit this */
+    min-width: 100%;
+    color: #888;
+    align-items: center;
+}
+
+#footer-social .fa-stack {
+    margin: 0 0.7rem;
+}
+
+#footer-social .social-icon {
+    font-size: 1.1rem;
+    margin-top: 0.45rem;
+    margin-left: 0.25rem;
+}
+
+#footer-social .fa-circle {
+    color: #333;
+    font-size: 2.5rem;
+}
+
+#footer-social .fa-stack:hover .fa-circle {
+    color: #131313;
+}
+
+#footer-nav {
+    margin-top: 2rem;
+}
+
+#footer-nav .footer-nav-link {
+    text-transform: uppercase;
+    color: #888;
+    font-weight: 400;
+    font-size: 0.8rem;
+    margin: 0 0.5rem;
+}
+
+#footer-nav .footer-nav-link:hover {
+    color: #fff;
+}
+
+.footer-wrapper span img {
+    height: 9px;
+}
+
+.footer-wrapper span {
+    font-size: 13px;
+}
+
+#heart {
+    color: red;
+}
+
+/******  Width >= 786px < 1024 ******/
+
+@media only screen and (min-width: 768px) {
+    /* Navigation */
+    header {
+        grid-template-rows: 1fr 50px 1fr;
+        height: 6.875rem;
+    }
+
+    #brand {
+        grid-row: span 2;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    nav {
+        grid-template-rows: 1fr 50px;
+        grid-row: span 2;
+    }
+
+    #search {
+        grid-column: -1;
+    }
+
+    #topnav {
+        display: flex;
+    }
+
+    #basenav {
+        color: #aaa;
+        display: flex;
+        grid-row: 2;
+    }
+
+    #basenav li:nth-child(n+6) {
+        display: none;
+    }
+
+    .seme {
+        grid-row: 2;
+        align-self: center;
+    }
+
+    /* End Navigation */
+
+    /* START Cover */
+    #cover {
+        height: 60vh;
+        flex-direction: row;
+        flex-flow: column wrap;
+    }
+    #main-cover-article {
+        width: 59.5%;
+        height: 100%;
+    }
+    #cover-top-right,
+    #cover-bot-right {
+        margin-top: 0;
+        height: 49%;
+        width: 40%;
+    }
+
+    #cover-top-right {
+        margin-bottom: 0.45rem;
+    }
+    /* END cover */
+
+    /* News Articles*/
+    #news-articles {
+        flex-direction: row;
+    }
+
+    .news-article {
+        flex-direction: column;
+        width: 33.33%;
+        height: 11.25rem;
+        padding: 0.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .story-image {
+        min-height: 75%;
+        max-height: 75%;
+        min-width: 100%;
+    }
+
+    .story-description {
+        margin-top: 0.5rem;
+        padding-left: 0;
+    }
+    /* End News Articles */
+
+    /* Funding Section */
+    #funding-wrapper {
+        display: flex;
+        flex-direction: row;
+    }
+    .funding-card {
+        width: 33.33%;
+        height: 15.625rem; /* 250px / 16*/
+    }
+
+    .funding-card:nth-last-child(1) {
+        display: none;
+    }
+
+    #funding-nav {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #funding-nav span {
+        display: inline-block;
+        margin: 0 1rem;
+        color: #f42;
+    }
+
+    .funding-header h2 {
+        margin-bottom: 0;
+    }
+
+    /* End Funding Section */
+    /* Topics Section */
+    #topics {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .topic-card {
+        width: 49.5%;
+        min-height: 43.375rem;
+        max-height: 45.31rem;
+        margin-top: 1rem;
+    }
+    .topic-card:nth-child(odd) {
+        margin-left: 1%;
+    }
+    /* End of Topics Section */
+
+    /* Deals Section */
+    #deals {
+        margin-top: 5rem;
+    }
+
+    #deal-wrapper {
+        display: flex;
+        flex-direction: row;
+        flex-wrap:wrap;
+    }
+    .deal {
+        flex-direction: column;
+        width: 33.33%;
+        min-height: 16.25rem;
+        max-height: 20rem;
+    }
+
+    .deal-thumb {
+        min-width: 100%;
+        min-height: 11rem;
+    }
+    
+    .deal-content {
+        padding: 0;
+        padding-top: 0.5rem;
+    }
+    /* End of deals section */
+
+    /* Footer */
+    .bottom .footer-wrapper {
+        flex-direction: row;
+    }
+}
+
+/******  Width >= 1024px ******/
+
+@media only screen and (min-width: 1024px) {
+    #brand {
+        display: none;
+    }
+
+    nav {
+        grid-column: 1 / -1;
+    }
+
+    #basenav li:nth-child(n+6) {
+        display: inline-block;
+    }
+
+
+    .news-article {
+        width: 25%;
+        height: 16.875rem;
+    }
+
+    .funding-card:nth-last-child(1) {
+        display: block;
+    }
+
+    .topic-card {
+        width: 32%;
+        min-height: 42.8125rem; /* 685px */
+        max-height: 43.75rem;
+        margin-top: 3rem;
+    }
+
+    .topic-card:nth-child(even) {
+        margin-left: 1%;
+    }
+
+    .deal {
+        width: 25%;
+        min-height: 18rem; /* 288px */
+        max-height: 18.75rem; /* 300px */
+    }
+    
+
 }
